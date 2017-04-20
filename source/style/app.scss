@@ -1,5 +1,8 @@
-body {
+
+@import 'common/portfolio';
+
+* {
   margin: 0;
+  padding: 0;
 }
 
-@import 'common/greating';

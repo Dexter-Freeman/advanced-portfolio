@@ -1,0 +1,37 @@
+extends ../_template
+
+block variables
+  - var title = 'About'
+
+block content
+  .wrapper
+    section.section.hero
+        .top-line
+          .top-line__left
+              ul.socials
+                  li.socials__item
+                    a(href="#" class="socials__link socials__link_vk") vk
+                  li.socials__item
+                    a(href="#" class="socials__link socials__link_gh") gh
+                  li.socials__item
+                    a(href="#" class="socials__link socials__link_in") in
+
+          .top-line__right
+            a(href="#").hamburger
+
+        .hero__title
+            img(src="/assets/img/icons/portf_arrow_up.svg").section-title
+            .user.hero__user-block
+                .user__photo
+                    img(src="" alt="").user__img
+                .user__name Dexter Freeman
+                .user__desc Личный сайт веб разработчика
+        a(href="#").arrow_down
+
+    section.section.about
+
+    section.section.map
+
+
+
+  footer.footer

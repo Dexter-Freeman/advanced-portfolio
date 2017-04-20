@@ -1,0 +1,12 @@
+.hero {
+  min-height: 650px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  background-image: url(/assets/img/hero-bg.jpg); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbW1vbi9wb3J0Zm9saW8uc2NzcyIsImFwcC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Msa0JBQWlCO0VBQ2pCLHVCQUFzQjtFQUNuQixtQ0FBa0M7RUFDbEMsbUJBQWtCO0VBQ2xCLCtDQUE4QyxFQUNqRDs7QUNIRDtFQUNFLFVBQVM7RUFDVCxXQUFVLEVBQ1giLCJmaWxlIjoiYXBwLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5oZXJvIHtcclxuXHRtaW4taGVpZ2h0OiA2NTBweDtcclxuXHRiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xyXG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyIGNlbnRlcjtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgvYXNzZXRzL2ltZy9oZXJvLWJnLmpwZyk7XHJcbn0iLCJcclxuQGltcG9ydCAnY29tbW9uL3BvcnRmb2xpbyc7XHJcblxyXG4qIHtcclxuICBtYXJnaW46IDA7XHJcbiAgcGFkZGluZzogMDtcclxufVxyXG5cclxuIl19 */
