@@ -1,8 +1,259 @@
-
-@import 'common/portfolio';
-
-* {
-  margin: 0;
-  padding: 0;
+@mixin clearfix() {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
 }
 
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/robot/Roboto-Light.ttf') format('ttf');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/robot/Roboto-LightItalic.ttf') format('ttf');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/robot/Roboto-Regular.ttf') format('ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/robot/Roboto-Italic.ttf') format('ttf');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/robot/Roboto-Medium.ttf') format('ttf');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/robot/Roboto-MediumItalic.ttf') format('ttf');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/robot/Roboto-Bold.ttf') format('ttf');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/robot/Roboto-BoldItalic.ttf') format('ttf');
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Bernier';
+	src: url('../fonts/bernier/BERNIERRegular-Regular.otf') format('otf');
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #373e42;
+	font-size: 16px;
+}
+a {
+	text-decoration: underline;
+	color: #6da3bd;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Bernier', sans-serif;
+}
+
+h1 {
+	font-size: 63px;
+	margin: 70px 0;
+}
+
+h2, h3, h4, h5, h6 {
+	font-size: 35px;
+	margin-bottom: 40px;
+}
+
+li {
+	list-style-type: none;
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	&::after {
+		content: "";
+		display: block;
+		height: 80px;
+	}
+}
+
+.footer {
+	height: 80px;
+	margin-top: 80px;
+	position: relative;
+}
+
+.section {
+	&-title {
+		position: absolute;
+		opacity: .2;
+	}
+}
+.hero {
+	padding: 30px 20px 0 20px;
+	min-height: 650px;
+	background-size: cover;
+	position: relative;
+	background-image: url(/assets/img/hero-bg.jpg);
+	&__title {
+		position: relative;
+		margin-top: 59px;
+	}
+	&__user-block {
+		margin: 0 auto;
+	}
+}
+
+.user {
+	width: 500px;
+	position: relative;
+	top: 50%;
+	font-family: 'Roboto';
+	&__photo {
+		
+	}
+	&__img {
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		display: block;
+		margin: 0 auto;
+	}
+	&__name {
+		font-size: 35px;
+		color: #fff;
+		text-align: center;
+		font-weight: 600;
+	}
+	&__desc {
+		color: #fff;
+		text-align: center;
+		font-weight: 300;
+	}
+}
+
+.socials {
+	&__item {
+		display: inline-block;
+		margin-left: 10px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	&__link {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		vertical-align: middle;
+		&_vk {
+			background-image: url(/assets/img/icons/vk.svg);
+			background-repeat: no-repeat;
+			opacity: .7;
+			transition: .3s;
+			background-position: center center;
+			&:hover {
+				opacity: 1;
+			}
+		}
+		&_gh {
+			background-image: url(/assets/img/icons/github.svg);
+			background-repeat: no-repeat;
+			opacity: .7;
+			transition: .3s;
+			background-position: center center;
+			&:hover {
+				opacity: 1;
+			}
+		}
+		&_in {
+			background-image: url(/assets/img/icons/in.svg);
+			background-repeat: no-repeat;
+			opacity: .7;
+			transition: .3s;
+			background-position: center center;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.hamburger {
+	display: inline-block;
+	width: 45px;
+	height: 40px;
+	background-image: url(/assets/img/icons/hamburger.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	&:hover {
+		
+	}
+}
+
+.top-line {
+	@include clearfix;
+	&__left {
+		width: 50%;
+		float: left;
+		text-align: left;
+	}
+	&__right {
+		width: 50%;
+		float: right;
+		text-align: right;
+	}
+}
