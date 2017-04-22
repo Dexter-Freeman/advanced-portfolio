@@ -11,26 +11,30 @@ block content
           .top-line__left
               ul.socials
                   li.socials__item
-                    a(href="#" class="socials__link socials__link_vk") vk
+                    a(href="#" class="socials__link socials__link_vk")
                   li.socials__item
-                    a(href="#" class="socials__link socials__link_gh") gh
+                    a(href="#" class="socials__link socials__link_gh")
                   li.socials__item
-                    a(href="#" class="socials__link socials__link_in") in
+                    a(href="#" class="socials__link socials__link_in")
 
           .top-line__right
             a(href="#").hamburger
 
         .hero__title
-            img(src="/assets/img/icons/portf_arrow_up.svg").section-title
+            img(src="/assets/img/icons/portfolio_header.svg").section-title
             .user.hero__user-block
                 .user__photo
-                    img(src="" alt="").user__img
+                  .user__photo-avatar
+                    img(src="/assets/img/avka.jpg" alt="avka").user__photo-img
                 .user__name Dexter Freeman
                 .user__desc Личный сайт веб разработчика
-        a(href="#").arrow_down
+        .arrow-link
+          a(href="#").arrow.arrow_down
 
     section.section.about
-
+      .about__left
+        svg(src="./assets/img/icons/aboute_bg_left.svg").triangle.triangle_fill_white
+      .about__right
     section.section.map
 
 
