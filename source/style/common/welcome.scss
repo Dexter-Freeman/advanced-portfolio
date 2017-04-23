@@ -1,0 +1,42 @@
+.welcome {
+	width: 383px;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: rgba(#fcfcfc, .85);
+	padding: 25px 0 0 0;
+	@include centered();
+	&__socials {
+		margin-top: 30px;
+		text-align: center;
+	}
+	&__nav {
+		margin-top: 25px;
+	}
+}
+
+.welcome-user-block {
+	
+}
+
+.welcome-copyright {
+	text-align: center;
+	@include centered(x);
+	bottom: 0;
+}
+
+.welcome-login {
+	display: block;
+	@include Roboto(500);
+	text-decoration: none;
+	padding: 15px 25px;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	transition: .3s;
+	position: absolute;
+	right: 0;
+	&:hover {
+		color: $green;
+		background-color: #fff;
+	}
+}

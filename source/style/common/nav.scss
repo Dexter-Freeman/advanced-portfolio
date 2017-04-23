@@ -1,0 +1,33 @@
+.nav {
+
+}
+
+.nav-list {
+	@include clearfix;
+	&__item {
+		float: left;
+		&_welcome {
+			
+		}
+	}
+
+}
+
+.nav-link {
+	@include Roboto(500);
+	font-size: 16px;
+	text-decoration: none;
+	display: block;
+	padding: 16px 32px;
+	color: #fff;
+	transition: .3s;
+	&_welcome {
+		background-color: rgba($green, .8);
+		// border-left: 2px solid rgba(#dee3e7, .5);
+		&:hover {
+			background-color: $dark-green;
+		}
+
+		
+	}
+}

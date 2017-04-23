@@ -4,4 +4,29 @@ block variables
   - var title = 'Home page'
 
 block content
-  include ../common/_greating
+    .index-page-wrapper
+        .container
+            a(href="login.html").welcome-login Авторизоваться
+            .welcome
+                .user.welcome-user-block
+                    .user__photo
+                        img(src="/assets/img/avka.jpg" alt="avka").user__img
+                    .user__name.user__name_welcome Dexter Freeman
+                    .user__desc.user__desc_welcome Личный сайт веб разработчика
+                ul.socials.welcome__socials
+                      li.socials__item
+                        a(href="#" class="socials__link socials__link_vk")
+                      li.socials__item
+                        a(href="#" class="socials__link socials__link_gh")
+                      li.socials__item
+                        a(href="#" class="socials__link socials__link_in")
+                nav.nav.welcome__nav
+                    ul.nav-list.nav-list_welcome
+                        li.nav-list__item.nav-list__item_welcome
+                            a(href="works.html").nav-link.nav-link_welcome Мои работы
+                        li.nav-list__item.nav-list__item_welcome
+                            a(href="works.html").nav-link.nav-link_welcome Обо мне
+                        li.nav-list__item.nav-list__item_welcome
+                            a(href="works.html").nav-link.nav-link_welcome Блог
+
+            .copyright.welcome-copyright © Dexter Freeman | создано с любовью в LoftSchool | 2017

@@ -4,39 +4,203 @@ block variables
   - var title = 'About'
 
 block content
-  .wrapper
-    section.section.hero
-      .container
-        .top-line
-          .top-line__left
-              ul.socials
-                  li.socials__item
-                    a(href="#" class="socials__link socials__link_vk")
-                  li.socials__item
-                    a(href="#" class="socials__link socials__link_gh")
-                  li.socials__item
-                    a(href="#" class="socials__link socials__link_in")
+    .wrapper
+        section.section.hero
+            .container
+                .top-line
+                      .top-line__left
+                            ul.socials
+                                  li.socials__item
+                                        a(href="#" class="socials__link socials__link_vk")
+                                  li.socials__item
+                                        a(href="#" class="socials__link socials__link_gh")
+                                  li.socials__item
+                                        a(href="#" class="socials__link socials__link_in")
 
-          .top-line__right
-            a(href="#").hamburger
+                      .top-line__right
+                            a(href="#").hamburger
+                                  img(src="assets/img/icons/hamburger.svg")
 
-        .hero__title
-            img(src="/assets/img/icons/portfolio_header.svg").section-title
-            .user.hero__user-block
-                .user__photo
-                  .user__photo-avatar
-                    img(src="/assets/img/avka.jpg" alt="avka").user__photo-img
-                .user__name Dexter Freeman
-                .user__desc Личный сайт веб разработчика
-        .arrow-link
-          a(href="#").arrow.arrow_down
+                .hero__title
+                      img(src="/assets/img/icons/portfolio_header.svg").section-title
+                      .user.hero__user-block
+                            .user__photo
+                                  img(src="/assets/img/avka.jpg" alt="avka").user__img
+                            .user__name Dexter Freeman
+                            .user__desc Личный сайт веб разработчика
+            
+                a(href="").down-arrow
+                      img(src="assets/img/icons/arrow_down.svg", alt="").down-arrow__icon
 
-    section.section.about
-      .about__left
-        svg(src="./assets/img/icons/aboute_bg_left.svg").triangle.triangle_fill_white
-      .about__right
-    section.section.map
+        section.section.about
+            .about__left
+                <svg class="triangle triangle_fill_white about__triangles" viewbox="0 0 1000 100" preserveAspectRatio="none">
+                      <polygon points="0,0 0,100 1000,100"></polygon>
+                </svg>
+                .container_half_left
+
+                        <div class="title about__section-title" style="background-image: url('assets/img/icons/about_header.svg');">Обо мне</div>      
+                        .user-about
+                            .user-about__picture
+                                  img(src="/assets/img/avka.jpg" alt="avka").user-about__img
+                            .user-about__title
+                                  .subtitle
+                                        | Кто я
+                        .user-about__text
+                            p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                            p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.    
+            .about__right
+                <svg class="triangle triangle_fill_beige about__triangles" viewbox="0 0 1000 100" preserveAspectRatio="none">
+                      <polygon points="0,100 1000,100 1000,0"></polygon>
+                </svg>
+                .container_half_right
+                        .about-data
+                            .about-data__description.about-user-info
+                                .about-user-info__title
+                                    .subtitle Чем я могу быть вам полезен
+                            .about-user-info__text
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam officia incidunt, quisquam sit harum totam, perspiciatis nesciunt, culpa at, laborum nobis error. In doloremque iusto rem, alias incidunt, expedita quos.
+                        .about-data__content
+                            ul.skills
+                                    li.skills__item
+                                        .skill-section
+                                            .skill-section__title Frontend
+                                            ul.skill-section__list
+                                                    li.skill-section__item
+                                                        .skill
+                                                                <svg class="circles" viewBox='0 0 110 110'>
+                                                                    <circle r="45" cx="50%" cy="50%" fill="none" class="circle__first"/> 
+                                                                    <circle r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-90"/> 
+                                                                </svg>
+                                                                .skill__name HTML5
+                                                    li.skill-section__item
+                                                        .skill
+                                                                <svg class="circles" viewBox='0 0 110 110'>
+                                                                    <circle r="45" cx="50%" cy="50%" fill="none" class="circle__first"/> 
+                                                                    <circle r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-85"/> 
+                                                                </svg>
+                                                                .skill__name CSS3
+                                                    li.skill-section__item
+                                                        .skill
+                                                                <svg class="circles" viewBox='0 0 110 110'>
+                                                                    <circle r="45" cx="50%" cy="50%" fill="none" class="circle__first"/> 
+                                                                    <circle r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-85"/> 
+                                                                </svg>
+                                                                .skill__name JavaScript & jQuery
+                                    li.skills__item
+                                        .skill-section
+                                            .skill-section__title Backend
+                                            ul.skill-section__list
+                                                    li.skill-section__item
+                                                        .skill
+                                                                <svg class="circles" viewBox='0 0 110 110'>
+                                                                        <circle r="45" cx="50%" cy="50%" fill="none" class="circle__first"/> 
+                                                                        <circle r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-40"/> 
+                                                                </svg>
+                                                                .skill__name PHP
+                                                    li.skill-section__item
+                                                        .skill
+                                                                <svg class="circles" viewBox='0 0 110 110'>
+                                                                        <circle r="45" cx="50%" cy="50%" fill="none" class="circle__first"/> 
+                                                                        <circle r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-55"/> 
+                                                                </svg>
+                                                                .skill__name mySQL
+                                                    li.skill-section__item
+                                                        .skill
+                                                                <svg class="circles" viewBox='0 0 110 110'>
+                                                                        <circle r="45" cx="50%" cy="50%" fill="none" class="circle__first"/> 
+                                                                        <circle r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-40"/> 
+                                                                </svg>
+                                                                .skill__name Node.js & npm
+                                                    li.skill-section__item
+                                                          .skill
+                                                                <svg class="circles" viewBox='0 0 110 110'>
+                                                                        <circle r="45" cx="50%" cy="50%" fill="none" class="circle__first"/> 
+                                                                        <circle r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-60"/> 
+                                                                </svg>
+                                                                .skill__name Mongo.db
+                                    li.skills__item
+                                        .skill-section
+                                                .skill-section__title WorkFlow
+                                                ul.skill-section__list
+                                                    li.skill-section__item
+                                                            skill
+                                                                <svg class="circles" viewBox='0 0 110 110'>
+                                                                    <circle r="45" cx="50%" cy="50%" fill="none" class="circle__first"/> 
+                                                                    <circle r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-80"/> 
+                                                                </svg>
+                                                                .skill__name Git
+                                                    li.skill-section__item
+                                                            .skill
+                                                                <svg class="circles" viewBox='0 0 110 110'>
+                                                                    <circle r="45" cx="50%" cy="50%" fill="none" class="circle__first"/> 
+                                                                    <circle r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-70"/> 
+                                                                </svg>
+                                                                .skill__name Gulp
+                                                    li.skill-section__item
+                                                            .skill
+                                                                <svg class="circles" viewBox='0 0 110 110'>
+                                                                    <circle r="45" cx="50%" cy="50%" fill="none" class="circle__first"/> 
+                                                                    <circle r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-60"/> 
+                                                                </svg>
+                                                                .skill__name Bower
+            
+        section.section.map
+            .yandex-map#map
+            .contacts
+                .contacts__title
+                    .subtitle Контакты
+                ul.contacts-list
+                    li.contacts-list__item
+                        a.contacts-link(href="skype:[login_skype]?call")
+                            span.contacts-link__img
+                                <i class="fa fa-skype" aria-hidden="true"></i>
+                            span.contacts-link__text Skype
+                    li.contacts-list__item
+                        a.contacts-link(href="mailto:example@email.com")
+                            span.contacts-link__img
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            span.contacts-link__text example@mail.com
+                    li.contacts-list__item
+                        a.contacts-link(href="tel:+79787235810")
+                            span.contacts-link__img
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            span.contacts-link__text +7(978) 723-58-10
+                    li.contacts-list__item
+                        a.contacts-link(href="#")
+                            span.contacts-link__img
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            span.contacts-link__text Крым, г.Щёлкино
 
 
-
-  footer.footer
+    footer.footer
+          
+            .footer__top
+                .container
+                        .footer__top_left
+                            nav.footer-nav
+                                    ul.footer-nav-list
+                                        li.footer-nav-list__item
+                                              a(href="works.html").footer-nav__link Мои работы
+                                        li.footer-nav-list__item
+                                              a(href="about.html").footer-nav__link Обо мне
+                                        li.footer-nav-list__item
+                                              a(href="blog.html").footer-nav__link Блог
+                                        li.footer-nav-list__item
+                                              a(href="avtorization.html").footer-nav__link Авторизация
+                        .footer__top_right
+                            ul.socials
+                                li.socials__item
+                                    a(href="#" class="socials__link socials__link_vk_rounded")
+                                li.socials__item
+                                    a(href="#" class="socials__link socials__link_gh_rounded")
+                                li.socials__item
+                                    a(href="#" class="socials__link socials__link_in_rounded")
+            .footer__bottom
+                .container
+                      .footer__bottom_left
+                            p Я веб-разработчик из Крыма, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
+                      .footer__bottom_right
+                            .footer__bottom_right__text © Dexter Freeman | создано с любовью в LoftSchool | 2017
+          
+                <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>

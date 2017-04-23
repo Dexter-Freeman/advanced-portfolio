@@ -18,6 +18,16 @@
     }
 }
 
+@mixin Roboto($weight: 400) {
+    font-family: 'Roboto', Arial;
+    font-style: normal;
+
+    @if $weight {
+      font-weight: $weight;
+    }
+    
+}
+
 %clearfix {
   &:after {
     content: "";
@@ -35,4 +45,8 @@
   &:after {
     clear: both;
   }
+}
+
+@mixin bernier() {
+  font-family: 'Bernier', Arial;
 }

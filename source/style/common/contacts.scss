@@ -1,0 +1,38 @@
+.contacts {
+	width: 380px;
+	background-color: rgba(#fcfcfc, .85);
+	@include centered;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 35px;
+	&__title {
+		text-align: center;
+	}
+}
+
+.contacts-list {
+	&__item {
+		margin-top: 25px;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+.contacts-link {
+	display: block;
+	&__img {
+		display: inline-block;
+		vertical-align: middle;
+		color: #00bea4;
+		font-size: 16px;
+	}
+	&__text {
+		display: inline-block;
+		vertical-align: middle;
+		@include Roboto(500);
+		font-size: 16px;
+		margin-left: 10px;
+		color: $main-font-color;
+	}
+}

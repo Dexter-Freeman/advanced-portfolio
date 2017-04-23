@@ -1,0 +1,75 @@
+.socials {
+	&__item {
+		display: inline-block;
+		margin-left: 10px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	&__link {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		vertical-align: middle;
+		&_vk {
+			background-image: url(/assets/img/icons/vk.svg);
+			background-repeat: no-repeat;
+			opacity: .7;
+			transition: .3s;
+			background-position: center center;
+			background-size: contain;
+			&_rounded {
+				background-image: url(/assets/img/icons/vk_round.svg);
+				background-size: contain;
+				opacity: .7;
+				transition: .3s;
+				&:hover {
+				opacity: 1;
+			}
+			}
+			&:hover {
+				opacity: 1;
+			}
+		}
+		&_gh {
+			background-image: url(/assets/img/icons/github.svg);
+			background-repeat: no-repeat;
+			opacity: .7;
+			transition: .3s;
+			background-position: center center;
+			background-size: contain;
+			&_rounded {
+				background-image: url(/assets/img/icons/github_round.svg);
+				background-size: contain;
+				opacity: .7;
+				transition: .3s;
+				&:hover {
+				opacity: 1;
+			}
+			}
+			&:hover {
+				opacity: 1;
+			}
+		}
+		&_in {
+			background-image: url(/assets/img/icons/in.svg);
+			background-repeat: no-repeat;
+			opacity: .7;
+			transition: .3s;
+			background-position: center center;
+			background-size: contain;
+			&_rounded {
+				background-image: url(/assets/img/icons/in_round.svg);
+				background-size: contain;
+				opacity: .7;
+				transition: .3s;
+				&:hover {
+				opacity: 1;
+			}
+			}
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}

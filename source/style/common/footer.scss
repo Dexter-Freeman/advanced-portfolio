@@ -1,0 +1,78 @@
+.footer {
+	background-color: rgba(#373e42, .85);
+	height: 150px;
+	margin-top: -150px;
+	position: relative;
+	&__top {
+		border-bottom: 1px solid rgba(#fff, .1);
+		height: 75px;
+		@include clearfix;
+		padding-top: 25px;
+		&_left {
+			width: 50%;
+			float: left;
+			position: relative;
+		}
+		&_right {
+			width: 50%;
+			float: right;
+			text-align: right;
+		}
+	}
+	&__bottom {
+		height: 75px;
+		@include clearfix;
+		position: relative;
+		&_left {
+			width: 50%;
+			float: left;
+			color: #fff;
+			font-size: 16px;
+			@include Roboto(400);
+			opacity: .5;
+			text-align: left;
+			padding-top: 15px;
+		}
+		&_right {
+			width: 50%;
+			float: right;
+			color: #fff;
+			font-size: 16px;
+			@include Roboto(300);
+			opacity: .5;
+			text-align: right;
+			position: relative;
+			padding-top: 20px;
+			&__text {
+				// @include centered(y);
+			}
+		}
+	}
+}
+
+.footer-nav {
+	position: relative;
+	@include clearfix;
+	&__link {
+		display: block;
+		font-size: 16px;
+		@include Roboto(500);
+		text-decoration: none;
+		color: #fff;
+		&:hover {
+			color: $green;
+		}
+	}
+}
+
+.footer-nav-list {
+	// @include centered(y);
+	@include clearfix;
+	&__item {
+		float: left;
+		margin-left: 35px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}

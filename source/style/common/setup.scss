@@ -1,4 +1,4 @@
-
+@import "helpers/mixins";
 * {
 	// margin: 0;
 	// padding: 0;
@@ -12,8 +12,8 @@ html, body {
 body {
 	font-family: 'Roboto', Arial, sans-serif;
 	font-weight: 400;
-	color: #373e42;
-	font-size: 14px;
+	color: $main-font-color;
+	font-size: 16px;
 	line-height: 1.42;
 	-webkit-font-smoothing: antialiased;
 }
@@ -35,6 +35,10 @@ ul {
 
 p {
 	margin: 0;
+	text-align: left;
+	margin-bottom: 15px;
+	font-size: 16px;
+	line-height: 24px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -71,3 +75,25 @@ h1, h2, h3, h4, h5 {
 	// 	height: 80px;
 	// }
 }
+
+.container {
+	width: 1200px;
+	padding: 0 10px;
+	margin: 0 auto;
+	height: 100%;
+	@include clearfix;
+	&_half_left {
+		width: 600px;
+		padding-left: 10px;
+		float: right;
+		text-align: center;
+		padding: 0 80px 40px 80px;
+	}
+	&_half_right {
+		width: 600px;
+		padding-left: 40px;
+		float: left;
+		text-align: center;
+	}
+}
+

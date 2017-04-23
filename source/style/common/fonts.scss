@@ -54,9 +54,12 @@
 	font-style: italic;
 }
 
+
 @font-face {
-	font-family: 'Bernier';
-	src: url('../fonts/bernier/BERNIERRegular-Regular.otf') format('otf');
-	font-weight: 400;
-	font-style: normal;
+    font-family: 'Bernier';
+    src: url('../fonts/bernier/bernierregular-regular-webfont.woff') format('woff'),
+         url('../fonts/bernier/bernierregular-regular-webfont.svg#bernier_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
