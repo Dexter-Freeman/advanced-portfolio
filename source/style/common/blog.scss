@@ -1,0 +1,73 @@
+.blog {
+	padding-bottom: 65px;
+	position: relative;
+	&__triangle {
+		position: absolute;
+		bottom: 100%;
+		fill: #fff;
+	}
+	&__sidebar {
+		width: 25%;
+		float: left;
+		text-align: center;
+		padding-right: 35px;
+	}
+	&__content {
+		width: 75%;
+		float: left;
+		text-align: center;
+		padding-left: 35px;
+	}
+}
+
+.blog-list {
+	&__item {
+		padding-right: 3px;
+	}
+	&__link {
+		text-decoration: none;
+		display: block;
+		@include Roboto(500);
+		color: $main-font-color;
+		transition: .3s;
+		padding: 15px;
+		text-align: right;
+		&:hover {
+			color: $green;
+		}
+	}
+}
+
+.blog-list__item .active {
+	box-shadow: 3px 0px 0px 0px $green;
+	font-weight: bold;
+	color: $green;
+}
+
+.blog-article {
+	width: 685px;
+	border-top: solid 5px rgba(#373e42, .07);
+	margin-top: 65px;
+	padding-top: 65px;
+	&:first-child {
+		border-top: none;
+		margin-top: 0;
+		padding-top: 0;
+	}
+	&__header {
+
+	}
+	&__title {
+		text-align: left;
+		@include bernier();
+		font-size: 35px;
+	}
+	&__date {
+		text-align: left;
+		color: $green;
+		margin-top: 25px;
+	}
+	&__text {
+		margin-top: 25px;
+	}
+}

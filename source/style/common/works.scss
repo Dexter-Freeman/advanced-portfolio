@@ -1,0 +1,15 @@
+.works {
+	position: relative;
+	&__triangle {
+		position: absolute;
+		bottom: 100%;
+		fill: #faf8f0;
+	}
+	&__section-title {
+		@include centered(x);
+	}
+}
+
+.works-slider {
+	
+}

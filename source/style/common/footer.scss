@@ -7,16 +7,18 @@
 		border-bottom: 1px solid rgba(#fff, .1);
 		height: 75px;
 		@include clearfix;
-		padding-top: 25px;
+		// padding-top: 25px;
 		&_left {
 			width: 50%;
 			float: left;
-			position: relative;
+			@include centered(y);
 		}
 		&_right {
 			width: 50%;
 			float: right;
 			text-align: right;
+			@include centered(y);
+			right: 0;
 		}
 	}
 	&__bottom {
@@ -31,7 +33,7 @@
 			@include Roboto(400);
 			opacity: .5;
 			text-align: left;
-			padding-top: 15px;
+			@include centered(y);
 		}
 		&_right {
 			width: 50%;
@@ -42,7 +44,8 @@
 			opacity: .5;
 			text-align: right;
 			position: relative;
-			padding-top: 20px;
+			right: 0;
+			@include centered(y);
 			&__text {
 				// @include centered(y);
 			}

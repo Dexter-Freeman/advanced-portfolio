@@ -23,7 +23,6 @@
 	transition: .3s;
 	&_welcome {
 		background-color: rgba($green, .8);
-		// border-left: 2px solid rgba(#dee3e7, .5);
 		&:hover {
 			background-color: $dark-green;
 		}

@@ -1,0 +1,76 @@
+extends ../_template
+
+block variables
+  - var title = 'Мои работы'
+
+block content
+    .wrapper
+        section.section.hero.hero
+            .container
+                ul.socials.hero-socials
+                    li.socials__item
+                        a(href="#").socials__link.socials__link_vk
+                    li.socials__item
+                        a(href="#").socials__link.socials__link_gh
+                    li.socials__item
+                        a(href="#").socials__link.socials__link_in
+                a(href="#").hamgurger.hero-hamburger
+                    img(src="assets/img/icons/hamburger.svg")
+                .hero__title
+                    img(src="assets/img/icons/portfolio_header.svg").section-title
+                    .user.hero__user-block
+                        .user__photo
+                            img(src="assets/img/avka.jpg" alt="avka").user__img
+                        .user__name Dexter Freeman
+                        .user__desc Личный сайт веб разработчика
+        section.section.works
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="traingle works__triangle">
+                <polygon class = "triangle__left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
+                <polygon class = "traingle__right" points="1000,0   1000,86   500,86   500,75.5"></polygon>
+            </svg>
+            .title.works__section-title(style="background-image: url('assets/img/icons/works_header.svg')") Мои работы
+            .works-slider
+                .slider
+                    .slider__left
+                        .slider-info
+                            .slider-info__title
+                                .subtitle Сайт школы онлайн Образования
+                            .slider-info__desc HTML , CSS, JAVASCRIPT
+                                 
+                            .slider-info__link-block
+                                a.link.link_green.slider-info__link 
+                                    span.link__img
+                                        <i class="fa fa-link" aria-hidden="true"></i>
+                                    span.link__text Посмотреть сайт
+
+
+                    .slider__right  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio voluptas delectus obcaecati assumenda ipsa nostrum veritatis maiores, eaque quam, quos ullam aliquam ducimus rem debitis repellendus dolor, eius placeat libero.
+    footer.footer 
+        .footer__top
+            .container
+                        .footer__top_left
+                            nav.footer-nav
+                                    ul.footer-nav-list
+                                        li.footer-nav-list__item
+                                              a(href="works.html").footer-nav__link Мои работы
+                                        li.footer-nav-list__item
+                                              a(href="about.html").footer-nav__link Обо мне
+                                        li.footer-nav-list__item
+                                              a(href="blog.html").footer-nav__link Блог
+                                        li.footer-nav-list__item
+                                              a(href="avtorization.html").footer-nav__link Авторизация
+                        .footer__top_right
+                            ul.socials
+                                li.socials__item
+                                    a(href="#" class="socials__link socials__link_vk_rounded")
+                                li.socials__item
+                                    a(href="#" class="socials__link socials__link_gh_rounded")
+                                li.socials__item
+                                    a(href="#" class="socials__link socials__link_in_rounded")
+
+        .footer__bottom
+                .container
+                    .footer__bottom_left Я веб-разработчик из Крыма, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
+                            
+                    .footer__bottom_right
+                        .copyright © Dexter Freeman | создано с любовью в LoftSchool | 2017

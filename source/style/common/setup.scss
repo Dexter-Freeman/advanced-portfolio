@@ -47,40 +47,21 @@ h1, h2, h3, h4, h5 {
   font-weight: normal;
 }
 
-// h1, h2, h3, h4, h5, h6 {
-// 	font-family: 'Bernier', sans-serif;
-// }
-
-// h1 {
-// 	font-size: 63px;
-// 	margin: 70px 0;
-// }
-
-// h2, h3, h4, h5, h6 {
-// 	font-size: 35px;
-// 	margin-bottom: 40px;
-// }
-
-// li {
-// 	list-style-type: none;
-// }
-
 .wrapper {
 	position: relative;
 	min-height: 100%;
 	overflow: hidden;
-	// &::after {
-	// 	content: "";
-	// 	display: block;
-	// 	height: 80px;
-	// }
+	width: 100%;
+	padding-bottom: 150px;
+	
 }
 
 .container {
-	width: 1200px;
+	max-width: 1200px;
 	padding: 0 10px;
 	margin: 0 auto;
 	height: 100%;
+	position: relative;
 	@include clearfix;
 	&_half_left {
 		width: 600px;

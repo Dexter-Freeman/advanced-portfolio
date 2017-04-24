@@ -1,0 +1,24 @@
+.link {
+	display: inline-block;
+	padding: 15px 25px;
+	@include Roboto(500);
+	text-decoration: none;
+	border-radius: 10px;
+	&__img {
+		font-size: 16px;
+		margin-right: 10px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	&__text {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	&_green {
+		background-color: $green;
+		color: #fff;
+		&:hover {
+			background-color: $dark-green;
+		}
+	}
+}

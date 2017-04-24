@@ -1,0 +1,40 @@
+.slider {
+	height: 750px;
+	&__left {
+		background-color: $white;
+		width: 50%;
+		float: left;
+		height: 100%;
+		position: relative;
+	}
+	&__right {
+		background-color: $beige;
+		width: 50%;
+		float: right;
+	}
+}
+
+.slider-info {
+	width: 420px;
+	@include centered();
+	&__title {
+		.subtitle {
+			max-width: 450px;
+		}
+	}
+	&__desc {
+		border-bottom: 2px solid rgba($dark-green, .3);
+		border-top: 2px solid rgba($dark-green, .3);
+		color: $green;
+		@include Roboto(500);
+		text-align: center;
+		padding: 16px 0;
+	}
+	&__link-block {
+		margin-top: 40px;
+		text-align: center;
+	}
+	&__link {
+		
+	}
+}

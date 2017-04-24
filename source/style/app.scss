@@ -12,8 +12,11 @@ $dark-green : #009688;
 @import "common/user";
 @import "common/nav";
 @import "common/copyright";
-
-
+@import "common/blog";
+@import "common/triangle";
+@import "common/works";
+@import "common/slider";
+@import "common/link";
 //mixins
 @import "helpers/mixins";
 
@@ -39,37 +42,13 @@ $dark-green : #009688;
 	}
 }
 
-.hero {
-	// padding: 30px 20px 0 20px;
-	min-height: 650px;
-	background-size: cover;
-	position: relative;
-	overflow: hidden;
-	padding-top: 20px;
-	background-image: url(../img/hero-bg.jpg);
-	&__title {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		// width: 100%;
-		text-align: center;
-		// @include centered(y);
-	}
-	&__user-block {
-		position: absolute;
-	    top: 50%;
-	    left: 50%;
-	    -webkit-transform: translate(-50%,-50%);
-	    transform: translate(-50%,-50%);
-	}
-}
+
 
 
 .hamburger {
 	display: inline-block;
 	width: 45px;
 	height: 40px;
-	// background-image: url(/assets/img/icons/hamburger.svg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -92,28 +71,6 @@ $dark-green : #009688;
 	}
 }
 
-// .arrow-link {
-// 	position: absolute;
-// 	bottom: 10%;
-// 	left: 50%;
-// 	transform: translateX(-50%);
-// }
-
-// .arrow {
-// 	background-image: url(/assets/img/icons/arrow_down.svg);
-// 	display: block;
-// 	width: 55px;
-// 	height: 35px;
-// 	background-repeat: no-repeat;
-// 	background-position: center center;
-// 	background-size: cover;
-// 	&_down {
-		
-// 	}
-// 	&_top {
-// 		transform: rotate(180deg);
-// 	}
-// }
 
 .down-arrow {
   bottom: 40px;
@@ -123,22 +80,7 @@ $dark-green : #009688;
 
 /*-------about------*/
 
-.triangle {
-  height: 100px;
-  width: 100%;
 
-  &_fill {
-
-    &_white {
-      fill: $white;
-    }
-
-    &_beige {
-      fill: $beige;
-    }
-
-  }
-}
 
 .about {
 	@extend %clearfix;
@@ -208,6 +150,19 @@ $dark-green : #009688;
   &:before {
     left: $margin;
   }
+  &_white {
+  	color: #fff;
+  }
+  &_blog {
+  	padding: 0 80px;
+  	&:after {
+    background: rgba(#fff, .8);
+  }
+
+  &:before {
+     background: rgba(#fff, .8);
+  }
+  }
 }
 
 .subtitle {
@@ -215,12 +170,12 @@ $dark-green : #009688;
 	font-size: 35px;
 	display: inline-block;
     position: relative;
-    padding: 20px 85px;
+    padding: 20px 45px;
     color: #455a64;
-    max-width: 400px;
+    // max-width: 400px;
     text-align: center;
 
-	$margin : 40px;
+	// $margin : 40px;
 
 	&:after, &:before {
     content: "";
@@ -230,13 +185,19 @@ $dark-green : #009688;
     width: 22px;
     height: 5px;
   }
+  &_white {
+  	color: #fff;
+  }
+  &_blog {
+
+  }
 
   &:after {
-    right: $margin;
+    right: 0;
   }
 
   &:before {
-    left: $margin;
+    left: 0;
   }
 }
 
@@ -320,14 +281,12 @@ $dark-green : #009688;
 
 /*----MAP-----*/
 
-.map {
-	min-height: 650px;
-	position: relative;
-	background-color: #eee;
-}
+
 
 @import "common/contacts";
 @import "common/circle";
+@import "common/hero";
+@import "common/map";
 @import "common/footer";
 
 /*----END MAP-----*/

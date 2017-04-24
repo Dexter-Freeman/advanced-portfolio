@@ -1,0 +1,22 @@
+.triangle {
+  height: 100px;
+  width: 100%;
+  &__left {
+
+  }
+  &__right {
+    
+  }
+
+  &_fill {
+
+    &_white {
+      fill: $white;
+    }
+
+    &_beige {
+      fill: $beige;
+    }
+
+  }
+}
