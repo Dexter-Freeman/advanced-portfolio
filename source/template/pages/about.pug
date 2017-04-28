@@ -15,8 +15,22 @@ block content
                         a(href="#").socials__link.socials__link_gh
                     li.socials__item
                         a(href="#").socials__link.socials__link_in
-                a(href="#").hamgurger.hero-hamburger
-                    img(src="assets/img/icons/hamburger.svg")
+                .hamburger-wrapp
+                    a(href="#").hamgurger.hero-hamburger  
+                        img(src="assets/img/icons/hamburger.svg")                  
+                    .full-screen-menu
+                        a(href="#").full-screen-menu__close
+                            img(src="assets/img/icons/hamburger.svg")
+                        ul.full-screen-menu-list
+                            li.full-screen-menu-list__item
+                                a(href="works.html").subtitle.subtitle_white.full-screen-menu__link Мои работы
+                            li.full-screen-menu-list__item
+                                a(href="blog.html").subtitle.subtitle_white.full-screen-menu__link Блог
+                            li.full-screen-menu-list__item
+                                a(href="about.html").subtitle.subtitle_white.full-screen-menu__link Обо мне
+                            li.full-screen-menu-list__item
+                                a(href="#").subtitle.subtitle_white.full-screen-menu__link Авторизация
+                        
                 .hero__title
                       img(src="/assets/img/icons/portfolio_header.svg").section-title
                       .user.hero__user-block
@@ -27,6 +41,7 @@ block content
             
                 a(href="#about").arrow.hero_arrow
                       img(src="assets/img/icons/arrow_down.svg", alt="").down-arrow__icon
+                      
 
         section.section.about#about
             .about__left

@@ -21,6 +21,7 @@ $dark-green : #009688;
 @import "common/what-about";
 @import "common/feedback";
 @import "common/arrow";
+@import "common/full-screen-menu";
 //mixins
 @import "helpers/mixins";
 
@@ -50,37 +51,38 @@ $dark-green : #009688;
 
 
 .hamburger {
-	display: inline-block;
+	display: block;
 	width: 45px;
 	height: 40px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	&:hover {
-		
-	}
+	// &:hover {
+	// 	.full-screen-menu  {
+	// 	display: flex !important;
+	// }
+	// }
 }
 
-.top-line {
-	@include clearfix;
-	&__left {
-		width: 50%;
-		float: left;
-		text-align: left;
-	}
-	&__right {
-		width: 50%;
-		float: right;
-		text-align: right;
-	}
+.hamburger-wrapp:hover .full-screen-menu {
+	display: flex;
 }
 
+// .top-line {
+// 	@include clearfix;
+// 	&__left {
+// 		width: 50%;
+// 		float: left;
+// 		text-align: left;
+// 	}
+// 	&__right {
+// 		width: 50%;
+// 		float: right;
+// 		text-align: right;
+// 	}
+// }
 
-.down-arrow {
-  // bottom: 40px;
-  // z-index: 10;
-  // @include centered(x);
-}
+
 
 /*-------about------*/
 
@@ -192,6 +194,12 @@ $dark-green : #009688;
   }
   &_white {
   	color: #fff;
+  	&:after {
+  		background: rgba(#fff, .2);
+  	}
+  	&:before {
+  		background: rgba(#fff, .2);
+  	}
   }
   &_blog {
 
