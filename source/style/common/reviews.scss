@@ -1,0 +1,47 @@
+.reviews {
+	// @include centered(x);
+	&__quotes {
+		font-size: 36px;
+		opacity: .2;
+	}
+	&__user {
+		color: $green;
+		display: flex;
+		align-items: center;
+		&-pic {
+			width: 78px;
+			height: 78px;
+			border-radius: 50%;
+			overflow: hidden;
+			& img {
+				display: block;
+				max-width: 100%;
+			}
+		}
+		&-desc {
+			margin-left: 25px;
+		}
+		&-name {
+			@include Roboto(600);
+			display: block;
+
+		}
+		&-about {
+			@include Roboto();
+			display: block;
+		}
+	}
+	&__text {
+		margin-top: 10px;
+	}
+}
+
+.reviews-list {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 70px;
+	&__item {
+		width: 370px;
+		margin-right: 35px;
+	}
+}

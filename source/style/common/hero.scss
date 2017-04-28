@@ -15,6 +15,11 @@
 	&_blog {
 		height: 450px;
 	}
+	&_arrow {
+		bottom: 40px;
+		z-index: 10;
+		@include centered(x);
+	}
 }
 
 .hero-socials {
@@ -28,3 +33,4 @@
 	top: 2%;
 	right: 5%;
 }
+

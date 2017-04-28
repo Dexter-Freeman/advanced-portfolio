@@ -17,6 +17,10 @@ $dark-green : #009688;
 @import "common/works";
 @import "common/slider";
 @import "common/link";
+@import "common/reviews";
+@import "common/what-about";
+@import "common/feedback";
+@import "common/arrow";
 //mixins
 @import "helpers/mixins";
 
@@ -73,9 +77,9 @@ $dark-green : #009688;
 
 
 .down-arrow {
-  bottom: 40px;
-  z-index: 10;
-  @include centered(x);
+  // bottom: 40px;
+  // z-index: 10;
+  // @include centered(x);
 }
 
 /*-------about------*/
@@ -125,12 +129,13 @@ $dark-green : #009688;
   color: #373e42;
   font-size: 63px;
   @include bernier();
-  padding: 45px 80px;
+  padding: 30px 80px;
   display: inline-block;
   position: relative;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
+  text-align: center;
 
   $margin : 40px;
 

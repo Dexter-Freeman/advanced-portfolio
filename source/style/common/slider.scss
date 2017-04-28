@@ -1,40 +1,80 @@
 .slider {
-	height: 750px;
-	&__left {
-		background-color: $white;
-		width: 50%;
-		float: left;
+	height: 100vh;
+	min-height: 650px;
+	display: flex;
+	flex-flow: column wrap;
+	@include tablets {
+		flex-wrap: nowrap;
+		height: auto;
+		}
+	
+	&__desc {
 		height: 100%;
-		position: relative;
-	}
-	&__right {
-		background-color: $beige;
-		width: 50%;
-		float: right;
-	}
-}
+		display: flex;
+		background-color: $white;
+		&-info {
+			margin: auto;
+		}
+		&-title {
+			margin-bottom: 20px;
+		}
+		&-skills {
+			padding: 20px 0;
+			border-top: 1px solid $green;
+			border-bottom: 1px solid $green;
+			color: $green;
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: 500;
+			margin-bottom: 40px;
+		}
+		&-info-link {
+			margin-top: 40px;
+			text-align: center;
+			&__link {
 
-.slider-info {
-	width: 420px;
-	@include centered();
-	&__title {
-		.subtitle {
-			max-width: 450px;
+			}
 		}
 	}
-	&__desc {
-		border-bottom: 2px solid rgba($dark-green, .3);
-		border-top: 2px solid rgba($dark-green, .3);
-		color: $green;
-		@include Roboto(500);
+	&__display {
+		background-color: $beige;
 		text-align: center;
-		padding: 16px 0;
-	}
-	&__link-block {
-		margin-top: 40px;
-		text-align: center;
-	}
-	&__link {
+		flex: 2.5;
+		// position: relative;
 		
+		@include tablets {
+				order: -1;
+			}
+		&-pic {
+			// @include centered();
+			// display: block;
+		}
+	}
+	&__btns {
+		flex: 1;
+		display: flex;
+		align-items: stretch;
+	}
+	&__btn {
+		display: block;
+		background-size: cover;
+		background-position: center;
+		width: 100%;
+		position: relative;
+		&-img {
+			// width: 300px;
+
+		}
+		&-arrow {
+			@include centered();
+		}
+		&_left {
+			// background: rgba(0, 0, 0, .5);
+			background-image: linear-gradient(to right, rgba(#b6b4ae, .5) 0%, rgba(#b6b4ae, .5) 100%), url(/assets/img/down.jpg);
+
+		}
+		&_right {
+			background-image:  linear-gradient(to right, rgba(#b6b4ae, .5) 0%, rgba(#b6b4ae, .5) 100%), url(/assets/img/up.jpg);
+		}
 	}
 }

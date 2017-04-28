@@ -1,0 +1,62 @@
+.feedback {
+	width: 380px;
+	background-color: rgba(#fff, .15);
+	border-radius: 10px;
+	overflow: hidden;
+	
+	& input {
+		padding: 18px 20px;
+		border-radius: 10px;
+		width: 100%;
+		margin-bottom: 20px;
+		@include Roboto(400);
+		&:active {
+			@include Roboto(500);
+		}
+	}
+	& textarea {
+		padding: 18px 20px;
+		border-radius: 10px;
+		width: 100%;
+		resize: none;
+		margin-bottom: 20px;
+		height: 140px;
+	}
+	& label {
+		margin-bottom: 20px;
+	}
+	&__title {
+
+	}
+	&__inputs {
+		padding: 0 20px;
+	}
+	&__btns {
+		font-size: 0;
+	}
+	&__btn {
+		@include Roboto(500);
+		font-size: 16px;
+		text-decoration: none;
+		display: inline-block;
+		padding: 16px 32px;
+		color: #fff;
+		transition: .3s;
+		background-color: rgba($green, .85);
+		border: none;
+		width: 50%;
+		text-align: center;
+		&:first-child {
+			border-right: 1px solid rgba(#82cfc9, .5);
+		}
+		&:hover {
+			background-color: rgba($green, .3);
+		}
+	}
+}
+
+.feedback-wrap {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 70px;
+}

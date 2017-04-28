@@ -1,0 +1,13 @@
+.arrow {
+	opacity: .5;
+	// transition: .3s;
+	&:hover {
+		opacity: 1;
+	}
+	&-down {
+
+	}
+	&-up {
+		transform: rotate(180deg);
+	}
+}

@@ -1,0 +1,44 @@
+section.section.what-about
+	.what-about__title
+		.title.what-about__section-title(style="background-image: url('assets/img/icons/about_header.svg')") что обо мне <br> говорят
+	ul.reviews-list
+
+		li.reviews-list__item
+			span.reviews__quotes 
+				<i class="fa fa-quote-left" aria-hidden="true"></i>
+			.reviews__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+			.reviews__user
+				.reviews__user-pic
+					img(src="assets/img/user-1.jpg")
+				.reviews__user-desc
+					span.reviews__user-name Ковальчук Дмитрий
+					span.reviews__user-about основатель Loftschool
+
+		li.reviews-list__item
+			span.reviews__quotes 
+				<i class="fa fa-quote-left" aria-hidden="true"></i>
+			.reviews__text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+			.reviews__user
+				.reviews__user-pic
+					img(src="assets/img/user-2.jpg")
+				.reviews__user-desc
+					span.reviews__user-name Сабанцев Владимир
+					span.reviews__user-about преподаватель
+
+	.feedback-wrap
+		form.feedback#feedback
+			.feedback__title 
+				.subtitle Связаться со мной
+			.feedback__inputs
+				//- label(for="name")
+				input(type="text" name="name" id="name" required placeholder="Имя")
+				//- label(for="email")
+				input(type="text" name="email" id="email" required placeholder="Email")
+				//- label(for="message")
+				textarea(name="message" id="message" required placeholder="Ваше сообщение")
+			.feedback__btns
+				button(type="submit").feedback__btn Отправить
+				button(type="reset").feedback__btn Очистить
+
+	a(href="#hero").arrow.arrow-up
+		img(src="/assets/img/icons/arrow_down.svg").arrow__icon

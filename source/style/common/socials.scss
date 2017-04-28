@@ -15,14 +15,14 @@
 			background-image: url(/assets/img/icons/vk.svg);
 			background-repeat: no-repeat;
 			opacity: .7;
-			transition: .3s;
+			// transition: .3s;
 			background-position: center center;
 			background-size: contain;
 			&_rounded {
 				background-image: url(/assets/img/icons/vk_round.svg);
 				background-size: contain;
 				opacity: .7;
-				transition: .3s;
+				// transition: .3s;
 				&:hover {
 				opacity: 1;
 			}
