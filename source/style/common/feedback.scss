@@ -9,6 +9,7 @@
 		border-radius: 10px;
 		width: 100%;
 		margin-bottom: 20px;
+		outline: none;
 		@include Roboto(400);
 		&:active {
 			@include Roboto(500);

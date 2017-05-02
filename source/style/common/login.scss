@@ -1,0 +1,135 @@
+.login {
+	width: 383px;
+	background-color: rgba(#fff, .15);
+	border-radius: 10px;
+	overflow: hidden;
+	text-align: center;
+	& input {
+		padding: 15px 20px;
+		border: none;
+		margin-bottom: 20px;
+		width: 100%;
+		outline: none;
+		border-radius: 0 5px 5px 0;
+		opacity: .5;
+		// &:active {
+
+		// }
+		&:focus {
+			border: 1px solid $green;
+			opacity: 1;
+		}
+		// &:invalid {
+		// 	border: 1px solid $red;
+		// }
+
+	}
+	& label {
+		display: block;
+		span {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+	}
+	&__inputs {
+		padding: 0 20px;
+		text-align: center;
+	}
+	&__robot-block {
+		label {
+			display: inline-block;
+
+		}
+	}
+	&__robot_check {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: #fff;
+		border: 1px solid #cfcfcf;
+	}
+	&__name {
+
+	}
+	&__password {
+
+	}
+	&__human  {
+		display: none;
+		&:checked + .login__human_check {
+			background-image: url(../img/icons/check.svg);
+		    background-repeat: no-repeat;
+		    background-position: center center;
+		    background-size: contain;
+		}
+		&_check {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background-color: $green;
+			border-radius: 2px;
+		}
+	}
+	&__text {
+		display: block;
+		@include Roboto(600);
+		font-size: 16px;
+		margin: 20px 0 10px 0;
+	}
+	&__btns {
+		font-size: 0;
+		margin-top: 40px;
+	}
+	&__btn {
+		@include Roboto(500);
+		font-size: 16px;
+		text-decoration: none;
+		display: inline-block;
+		padding: 16px 32px;
+		color: #fff;
+		transition: .3s;
+		background-color: rgba($green, .85);
+		border: none;
+		width: 50%;
+		text-align: center;
+		cursor: pointer;
+		&:first-child {
+			border-right: 1px solid rgba(#82cfc9, .5);
+		}
+		&:hover {
+			background-color: rgba($dark-green, .85);
+		}
+	}
+	&__robot {
+		display: none;
+		&:checked + .login__robot_check {
+			background-image: -ms-radial-gradient(center, ellipse farthest-corner, $green 35%, #FFFFFF 35%);
+
+			/* Mozilla Firefox */ 
+			background-image: -moz-radial-gradient(center, ellipse farthest-corner, $green 35%, #FFFFFF 35%);
+
+			/* Opera */ 
+			background-image: -o-radial-gradient(center, ellipse farthest-corner, $green 35%, #FFFFFF 35%);
+
+			/* Webkit (Safari/Chrome 10) */ 
+			background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(35, $green), color-stop(35, #FFFFFF));
+
+			/* Webkit (Chrome 11+) */ 
+			background-image: -webkit-radial-gradient(center, ellipse farthest-corner, $green 35%, #FFFFFF 35%);
+
+			/* W3C Markup */ 
+			background-image: radial-gradient(ellipse farthest-corner at center, $green 35%, #FFFFFF 35%);
+		}
+	}
+}
+
+.login-wrapper {
+	width: 383px;
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: rgba(#fcfcfc, .85);
+	padding: 25px 0 0 0;
+	@include centered();
+}

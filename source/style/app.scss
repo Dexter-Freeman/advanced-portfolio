@@ -1,8 +1,9 @@
-$white : #efeee9;
-$beige: #eeebdf;
-$main-font-color : #455a64;
-$green: #00bfa5;
-$dark-green : #009688;
+$white :			 #efeee9;
+$beige:				 #eeebdf;
+$main-font-color :	 #455a64;
+$green: 			 #00bfa5;
+$dark-green : 		 #009688;
+$red : 				 #e44845;
 
 @import "common/setup";
 @import "common/fonts";
@@ -22,6 +23,7 @@ $dark-green : #009688;
 @import "common/feedback";
 @import "common/arrow";
 @import "common/full-screen-menu";
+@import "common/login";
 //mixins
 @import "helpers/mixins";
 
