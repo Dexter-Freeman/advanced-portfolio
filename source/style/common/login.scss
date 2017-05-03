@@ -41,6 +41,7 @@
 			display: inline-block;
 
 		}
+
 	}
 	&__robot_check {
 		display: inline-block;
@@ -50,6 +51,7 @@
 		background-color: #fff;
 		border: 1px solid #cfcfcf;
 	}
+
 	&__name {
 
 	}
@@ -102,9 +104,10 @@
 			background-color: rgba($dark-green, .85);
 		}
 	}
+
 	&__robot {
 		display: none;
-		&:checked + .login__robot_check {
+		&:checked .login__robot_check {
 			background-image: -ms-radial-gradient(center, ellipse farthest-corner, $green 35%, #FFFFFF 35%);
 
 			/* Mozilla Firefox */ 

@@ -31,3 +31,18 @@ block content
                     .login__btns
                         button(type="reset").login__btn На главную
                         button(type="submit").login__btn Войти
+                        label(for="robot_yes")
+                            input(type="radio" name="robot").login__robot#robot_yes
+                            span.login__robot_check
+                            span Да
+                        label(for="robot_no")
+                            input(type="radio" name="robot").login__robot#robot_no
+                            span.login__robot_check
+                            span Не уверен
+                        .login__btns
+                            button(type="reset").login__btn На главную
+                            button(type="submit").login__btn Войти
+
+                
+
+            .copyright.welcome-copyright © Dexter Freeman | создано с любовью в LoftSchool | 2017
