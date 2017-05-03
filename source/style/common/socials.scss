@@ -11,64 +11,83 @@
 		width: 30px;
 		height: 30px;
 		vertical-align: middle;
+		fill: #fff;
+		opacity: .5;
+		&:hover {
+			opacity: 1;
+		}
+		& svg {
+			width: 30px;
+			height: 30px;
+		}
+		&_green {
+			fill: $green;
+			opacity: .5;
+			// transition: .3s;
+			&:hover {
+				opacity: 1;
+			}
+		}
 		&_vk {
-			background-image: url(/assets/img/icons/vk.svg);
 			background-repeat: no-repeat;
-			opacity: .7;
+			// opacity: .7;
 			// transition: .3s;
 			background-position: center center;
 			background-size: contain;
 			&_rounded {
-				background-image: url(/assets/img/icons/vk_round.svg);
+				// background-image: url(/assets/img/icons/vk_round.svg);
 				background-size: contain;
-				opacity: .7;
+				// opacity: .7;
 				// transition: .3s;
 				&:hover {
-				opacity: 1;
+				// opacity: 1;
 			}
 			}
 			&:hover {
-				opacity: 1;
+				// opacity: 1;
 			}
 		}
 		&_gh {
-			background-image: url(/assets/img/icons/github.svg);
+			// background-image: url(/assets/img/icons/github.svg);
 			background-repeat: no-repeat;
-			opacity: .7;
-			transition: .3s;
+			// opacity: .7;
+			// transition: .3s;
 			background-position: center center;
 			background-size: contain;
 			&_rounded {
-				background-image: url(/assets/img/icons/github_round.svg);
+				// background-image: url(/assets/img/icons/github_round.svg);
 				background-size: contain;
-				opacity: .7;
-				transition: .3s;
+				// opacity: .7;
+				// transition: .3s;
 				&:hover {
-				opacity: 1;
+				// opacity: 1;
 			}
 			}
 			&:hover {
-				opacity: 1;
+				// opacity: 1;
 			}
 		}
 		&_in {
-			background-image: url(/assets/img/icons/in.svg);
+			// background-image: url(/assets/img/icons/in.svg);
 			background-repeat: no-repeat;
 			opacity: .7;
 			transition: .3s;
 			background-position: center center;
 			background-size: contain;
 			&_rounded {
-				background-image: url(/assets/img/icons/in_round.svg);
+				// background-image: url(/assets/img/icons/in_round.svg);
 				background-size: contain;
-				opacity: .7;
-				transition: .3s;
+				// opacity: .7;
+				// transition: .3s;
+				// background-color: #fff;
+				// border-radius: 50%;
+				// fill: transparent;
 				&:hover {
-				opacity: 1;
+				// opacity: 1;
 			}
 			}
 			&:hover {
-				opacity: 1;
+				// opacity: 1;
 			}
 		}
 	}

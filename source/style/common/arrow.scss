@@ -1,6 +1,12 @@
 .arrow {
 	opacity: .5;
-	// transition: .3s;
+	transition: .3s;
+	& svg {
+		fill: #fff;
+		// opacity: .5;
+		width: 25px;
+		height: 25px;
+	}
 	&:hover {
 		opacity: 1;
 	}

@@ -46,8 +46,7 @@
 				order: -1;
 			}
 		&-pic {
-			// @include centered();
-			// display: block;
+		
 		}
 	}
 	&__btns {
@@ -62,11 +61,13 @@
 		width: 100%;
 		position: relative;
 		&-img {
-			// width: 300px;
 
 		}
 		&-arrow {
 			@include centered();
+			width: 45px;
+			height: 45px;
+			fill: #fff;
 		}
 		&_left {
 			// background: rgba(0, 0, 0, .5);

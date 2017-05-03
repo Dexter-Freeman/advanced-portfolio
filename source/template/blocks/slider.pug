@@ -16,8 +16,10 @@ section.section.slider
                 img(src="/assets/img/slider.png").slider__display-pic
             .slider__btns
                 a(href="#").slider__btn.slider__btn_left
-                    //- img(src="/assets/img/down.jpg").slider__btn-img
-                    img(src="assets/img/icons/portf_arrow_down.svg", alt="").slider__btn-arrow
+                    svg.slider__btn-arrow 
+                        <use xlink:href="#portf_arrow_down">
+                    //- img(src="assets/img/icons/portf_arrow_down.svg", alt="").slider__btn-arrow
                 a(href="#").slider__btn.slider__btn_right
-                    //- img(src="/assets/img/up.jpg").slider__btn-img
-                    img(src="assets/img/icons/portf_arrow_up.svg", alt="").slider__btn-arrow
+                    svg.slider__btn-arrow 
+                        <use xlink:href="#portf_arrow_up">
+                    //- img(src="assets/img/icons/portf_arrow_up.svg", alt="").slider__btn-arrow

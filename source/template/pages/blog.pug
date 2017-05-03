@@ -10,14 +10,20 @@ block content
                 ul.socials.hero-socials
                     li.socials__item
                         a(href="#").socials__link.socials__link_vk
+                            svg 
+                                <use xlink:href='#vk'/>
                     li.socials__item
                         a(href="#").socials__link.socials__link_gh
+                            svg 
+                                <use xlink:href='#github'/>
                     li.socials__item
                         a(href="#").socials__link.socials__link_in
-                a(href="#").hamgurger.hero-hamburger
-                    img(src="assets/img/icons/hamburger.svg")
+                            svg 
+                                <use xlink:href='#in'/>
+                include ../blocks/hamburger-fullscreen-menu
                 .hero__title
-                    img(src="assets/img/icons/blog_header.svg").section-title
+                    svg.section-title
+                            <use xlink:href="#blog_header">
                     .user.hero__user-block
                         .user__photo
                             img(src="assets/img/avka.jpg" alt="avka").user__img

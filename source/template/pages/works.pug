@@ -10,21 +10,29 @@ block content
                 ul.socials.hero-socials
                     li.socials__item
                         a(href="#").socials__link.socials__link_vk
+                            svg 
+                                <use xlink:href='#vk'/>
                     li.socials__item
                         a(href="#").socials__link.socials__link_gh
+                            svg 
+                                <use xlink:href='#github'/>
                     li.socials__item
                         a(href="#").socials__link.socials__link_in
-                a(href="#").hamgurger.hero-hamburger
-                    img(src="assets/img/icons/hamburger.svg")
+                            svg 
+                                <use xlink:href='#in'/>
+                include ../blocks/hamburger-fullscreen-menu
                 .hero__title
-                    img(src="assets/img/icons/portfolio_header.svg").section-title
+                    svg.section-title
+                        <use xlink:href="#portfolio_header">
                     .user.hero__user-block
                         .user__photo
                             img(src="assets/img/avka.jpg" alt="avka").user__img
                         .user__name Dexter Freeman
                         .user__desc Личный сайт веб разработчика
                 a(href="#works-head").arrow.hero_arrow
-                      img(src="assets/img/icons/arrow_down.svg", alt="").down-arrow__icon
+                    svg
+                        <use xlink:href="#arrow_down">
+                      
         section.section.works-head#works-head
             <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="traingle works-head__triangle">
                 <polygon class = "triangle__left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>

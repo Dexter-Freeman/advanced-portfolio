@@ -4,26 +4,7 @@
 	border-radius: 10px;
 	overflow: hidden;
 	text-align: center;
-	& input {
-		padding: 15px 20px;
-		border: none;
-		margin-bottom: 20px;
-		width: 100%;
-		outline: none;
-		border-radius: 0 5px 5px 0;
-		opacity: .5;
-		// &:active {
-
-		// }
-		&:focus {
-			border: 1px solid $green;
-			opacity: 1;
-		}
-		// &:invalid {
-		// 	border: 1px solid $red;
-		// }
-
-	}
+	
 	& label {
 		display: block;
 		span {
@@ -39,9 +20,7 @@
 	&__robot-block {
 		label {
 			display: inline-block;
-
 		}
-
 	}
 	&__robot_check {
 		display: inline-block;
@@ -53,10 +32,92 @@
 	}
 
 	&__name {
-
+		display: table-cell;
+		outline: none;
+		border-radius: 0 5px 5px 0;
+		// opacity: .5;
+		padding: 15px;
+		background-color: #fff;
+		border: none;
+		width: 289px;
+		outline: none;
+		color: rgba($main-font-color, .5);
+		&:focus {
+			box-shadow: inset 0px 0px 0px 2px $green;
+			& + .login__name-pic {
+				color: $green;
+			}
+		}
+		&:active {
+			box-shadow: inset 0px 0px 0px 2px $green;
+			& + .login__name-pic {
+				color: $green;
+			}
+		}
+		// &:invalid {
+		// 	box-shadow: inset 0px 0px 0px 2px $red;
+		// }
+		&-wrapp { 
+			display: flex;
+			border-collapse: separate;
+			width: 100%;
+			margin-bottom: 20px;
+			flex-direction: row-reverse;
+		}
+		&-pic {
+			width: 51px;
+    		display: inline-block;
+			border-radius: 5px 0 0 5px;
+			padding: 15px;
+			color: #c4cbcd;
+			background-color: #f0efe9;
+			text-align: center;
+			border: none;
+		}
 	}
 	&__password {
-
+		display: table-cell;
+		outline: none;
+		border-radius: 0 5px 5px 0;
+		// opacity: .5;
+		padding: 15px;
+		background-color: #fff;
+		border: none;
+		width: 289px;
+		outline: none;
+		&:focus {
+			box-shadow: inset 0px 0px 0px 2px $green;
+			& + .login__password-pic {
+				color: $green;
+			}
+		}
+		&:active {
+			box-shadow: inset 0px 0px 0px 2px $green;
+			& + .login__password-pic {
+				color: $green;
+			}
+		}
+		// &:invalid {
+		// 	box-shadow: inset 0px 0px 0px 2px $red;
+		// }
+		&-wrapp { 
+			display: flex;
+			border-collapse: separate;
+			width: 100%;
+			margin-bottom: 20px;
+			flex-direction: row-reverse;
+		}
+		&-pic {
+			// display: inline-block;
+			// width: 20px;
+			// height: 20px;
+			border-radius: 5px 0 0 5px;
+			padding: 15px;
+			color: #c4cbcd;
+			background-color: #f0efe9;
+			text-align: center;
+			border: none;
+		}
 	}
 	&__human  {
 		display: none;
@@ -107,23 +168,23 @@
 
 	&__robot {
 		display: none;
-		&:checked .login__robot_check {
-			background-image: -ms-radial-gradient(center, ellipse farthest-corner, $green 35%, #FFFFFF 35%);
+		&:checked + .login__robot_check {
+			background-image: -ms-radial-gradient(center, ellipse farthest-corner, $green 30%, #FFFFFF 35%);
 
 			/* Mozilla Firefox */ 
-			background-image: -moz-radial-gradient(center, ellipse farthest-corner, $green 35%, #FFFFFF 35%);
+			background-image: -moz-radial-gradient(center, ellipse farthest-corner, $green 30%, #FFFFFF 35%);
 
 			/* Opera */ 
-			background-image: -o-radial-gradient(center, ellipse farthest-corner, $green 35%, #FFFFFF 35%);
+			background-image: -o-radial-gradient(center, ellipse farthest-corner, $green 30%, #FFFFFF 35%);
 
 			/* Webkit (Safari/Chrome 10) */ 
-			background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(35, $green), color-stop(35, #FFFFFF));
+			background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(30, $green), color-stop(35, #FFFFFF));
 
 			/* Webkit (Chrome 11+) */ 
-			background-image: -webkit-radial-gradient(center, ellipse farthest-corner, $green 35%, #FFFFFF 35%);
+			background-image: -webkit-radial-gradient(center, ellipse farthest-corner, $green 30%, #FFFFFF 35%);
 
 			/* W3C Markup */ 
-			background-image: radial-gradient(ellipse farthest-corner at center, $green 35%, #FFFFFF 35%);
+			background-image: radial-gradient(ellipse farthest-corner at center, $green 30%, #FFFFFF 35%);
 		}
 	}
 }

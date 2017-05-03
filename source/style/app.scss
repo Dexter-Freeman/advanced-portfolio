@@ -42,10 +42,10 @@ $red : 				 #e44845;
 
 .section {
 	&-title {
-		// position: absolute;
 		opacity: .2;
 		width: 100%;
-		// display: inline-block;
+		fill: #fff;
+		@include centered();
 	}
 }
 
@@ -59,30 +59,23 @@ $red : 				 #e44845;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	// &:hover {
-	// 	.full-screen-menu  {
-	// 	display: flex !important;
-	// }
-	// }
+	fill: #fff;
+	& svg {
+		width: 45px;
+		height: 40px;
+		fill: #fff;
+	}
+}
+
+.hamburger-wrapp {
+	position: absolute;
+	right: 5%;
 }
 
 .hamburger-wrapp:hover .full-screen-menu {
 	display: flex;
 }
 
-// .top-line {
-// 	@include clearfix;
-// 	&__left {
-// 		width: 50%;
-// 		float: left;
-// 		text-align: left;
-// 	}
-// 	&__right {
-// 		width: 50%;
-// 		float: right;
-// 		text-align: right;
-// 	}
-// }
 
 
 
@@ -100,7 +93,6 @@ $red : 				 #e44845;
 		background: $white;
 		position: relative;
 		@extend %clearfix;
-		// padding-bottom: 40px;
 	}
 	&__right {
 		width: 50%;

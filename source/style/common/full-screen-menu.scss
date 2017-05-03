@@ -7,10 +7,13 @@
 	overflow: hidden;
 	background-color: rgba(#00bfa5, .87);
 	z-index: 10;
-	// display: flex;
+	padding-top: 20px;
 	align-items: center;
 	justify-content: center;
 	display: none;
+	& .container {
+		width: 100%;
+	}
 	&__link {
 		color: #fff;
 		font-size: 63px;
@@ -21,17 +24,19 @@
 	}
 	&__close {
 		position: absolute;
-		top: 4%;
 		right: 5%;
 		display: block;
-		
+		& svg {
+			width: 45px;
+			height: 40px;
+			fill: #fff;
+		}
 	}
 }
 
 .full-screen-menu-list {
-	max-width: 90vw;
-	max-height: 100vh;
 	text-align: center;
+	@include centered();
 	&__item {
 
 	}

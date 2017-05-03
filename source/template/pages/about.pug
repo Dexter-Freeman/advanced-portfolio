@@ -11,36 +11,30 @@ block content
                 ul.socials.hero-socials
                     li.socials__item
                         a(href="#").socials__link.socials__link_vk
+                            svg 
+                                <use xlink:href='#vk'/>
                     li.socials__item
                         a(href="#").socials__link.socials__link_gh
+                            svg 
+                                <use xlink:href='#github'/>
                     li.socials__item
                         a(href="#").socials__link.socials__link_in
-                .hamburger-wrapp
-                    a(href="#").hamgurger.hero-hamburger  
-                        img(src="assets/img/icons/hamburger.svg")                  
-                    .full-screen-menu
-                        a(href="#").full-screen-menu__close
-                            img(src="assets/img/icons/hamburger.svg")
-                        ul.full-screen-menu-list
-                            li.full-screen-menu-list__item
-                                a(href="works.html").subtitle.subtitle_white.full-screen-menu__link Мои работы
-                            li.full-screen-menu-list__item
-                                a(href="blog.html").subtitle.subtitle_white.full-screen-menu__link Блог
-                            li.full-screen-menu-list__item
-                                a(href="about.html").subtitle.subtitle_white.full-screen-menu__link Обо мне
-                            li.full-screen-menu-list__item
-                                a(href="#").subtitle.subtitle_white.full-screen-menu__link Авторизация
+                            svg 
+                                <use xlink:href='#in'/>
+                include ../blocks/hamburger-fullscreen-menu
                         
                 .hero__title
-                      img(src="/assets/img/icons/portfolio_header.svg").section-title
-                      .user.hero__user-block
+                        svg.section-title
+                            <use xlink:href="#portfolio_header">
+                        .user.hero__user-block
                             .user__photo
                                   img(src="/assets/img/avka.jpg" alt="avka").user__img
                             .user__name Dexter Freeman
                             .user__desc Личный сайт веб разработчика
             
-                a(href="#about").arrow.hero_arrow
-                      img(src="assets/img/icons/arrow_down.svg", alt="").down-arrow__icon
+                a(href="#works-head").arrow.hero_arrow
+                    svg
+                        <use xlink:href="#arrow_down">
                       
 
         section.section.about#about

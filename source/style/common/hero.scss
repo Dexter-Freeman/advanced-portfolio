@@ -7,6 +7,7 @@
 	background-image: url(../img/hero-bg.jpg);
 	&__title {
 		text-align: center;
+		width: 100%;
 		@include centered();
 	}
 	&__user-block {
@@ -24,17 +25,12 @@
 
 .hero-socials {
 	position: absolute;
-	top: 2%;
 	left: 5%;
 }
 
 .hero-hamburger {
 	position: absolute;
-	top: 2%;
 	right: 5%;
 	display: block;
-	// &:hover .full-screen-menu {
-	// 	display: flex !important;
-	// }
 }
 
