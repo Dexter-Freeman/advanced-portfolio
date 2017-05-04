@@ -51,14 +51,44 @@
   font-family: 'Bernier', Arial;
 }
 
-@mixin tablets() {
+@mixin w1800() {
+  @media screen and (min-width: 1800px) {
+    @content;
+  }
+}
+
+@mixin w1200() {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin w992() {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin w768() {
   @media screen and (max-width: 768px) {
     @content;
   }
 }
 
-@mixin phones() {
+@mixin w520() {
+  @media screen and (max-width: 520px) {
+    @content;
+  }
+}
+
+@mixin w480() {
   @media screen and (max-width: 480px) {
     @content;
   }
 }
+
+// @mixin phones() {
+//   @media screen and (max-width: 480px) {
+//     @content;
+//   }
+// }

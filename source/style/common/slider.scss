@@ -3,7 +3,7 @@
 	min-height: 650px;
 	display: flex;
 	flex-flow: column wrap;
-	@include tablets {
+	@include w768 {
 		flex-wrap: nowrap;
 		height: auto;
 		}
@@ -44,7 +44,7 @@
 		width: 50%;
 		// position: relative;
 		
-		@include tablets {
+		@include w768 {
 				order: -1;
 			}
 		&-pic {
