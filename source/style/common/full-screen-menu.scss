@@ -18,9 +18,17 @@
 		color: #fff;
 		font-size: 63px;
 		text-decoration: none;
-		&:hover {
-			text-decoration: underline;
-		}
+		// &:hover {
+		// 	// text-decoration: underline;
+		// 	& + .subtitle_white {
+		// 		&:after {
+		// 			background: rgba(#fff, 1);
+		// 		}
+		// 		&:before {
+		// 			background: rgba(#fff, 1);
+		// 		}
+		// 	}
+		// }
 	}
 	&__close {
 		position: absolute;
@@ -38,6 +46,16 @@
 	text-align: center;
 	@include centered();
 	&__item {
-
+		&:hover {
+			// text-decoration: underline;
+			&  .subtitle_white {
+				&:after {
+					background: rgba(#fff, 1);
+				}
+				&:before {
+					background: rgba(#fff, 1);
+				}
+			}
+		}
 	}
 }
