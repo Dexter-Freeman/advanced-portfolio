@@ -4,43 +4,44 @@ block variables
   - var title = 'Мои работы'
 
 block content
-    .wrapper
-        section.section.hero#hero
-            .container
-                ul.socials.hero-socials
-                    li.socials__item
-                        a(href="#").socials__link.socials__link_vk
-                            svg 
-                                <use xlink:href='#vk'/>
-                    li.socials__item
-                        a(href="#").socials__link.socials__link_gh
-                            svg 
-                                <use xlink:href='#github'/>
-                    li.socials__item
-                        a(href="#").socials__link.socials__link_in
-                            svg 
-                                <use xlink:href='#in'/>
-                include ../blocks/hamburger-fullscreen-menu
-                .hero__title
-                    svg(height="600px").section-title
-                        <use xlink:href="#portfolio_header">
-                    .user.hero__user-block
-                        .user__photo
-                            img(src="assets/img/avka.jpg" alt="avka").user__img
-                        .user__name Dexter Freeman
-                        .user__desc Личный сайт веб разработчика
-                a(href="#works-head").arrow.hero_arrow
-                    svg
-                        <use xlink:href="#arrow_down">
-                      
-        section.section.works-head#works-head
-            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="traingle works-head__triangle">
-                <polygon class = "triangle__left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
-                <polygon class = "traingle__right" points="1000,0   1000,86   500,86   500,75.5"></polygon>
-            </svg>
-            .title.works-head__section-title(style="background-image: url('assets/img/icons/works_header.svg')") Мои работы
-            
-        include ../blocks/slider
-        include ../blocks/what-about
+    .page-wrapper
+        .wrapper
+            section.section.hero#hero
+                .container
+                    ul.socials.hero-socials
+                        li.socials__item
+                            a(href="#").socials__link.socials__link_vk
+                                svg 
+                                    <use xlink:href='#vk'/>
+                        li.socials__item
+                            a(href="#").socials__link.socials__link_gh
+                                svg 
+                                    <use xlink:href='#github'/>
+                        li.socials__item
+                            a(href="#").socials__link.socials__link_in
+                                svg 
+                                    <use xlink:href='#in'/>
+                    include ../blocks/hamburger-fullscreen-menu
+                    .hero__title
+                        svg(height="600px").section-title
+                            <use xlink:href="#portfolio_header">
+                        .user.hero__user-block
+                            .user__photo
+                                img(src="assets/img/avka.jpg" alt="avka").user__img
+                            .user__name Dexter Freeman
+                            .user__desc Личный сайт веб разработчика
+                    a(href="#works-head").arrow.hero_arrow
+                        svg
+                            <use xlink:href="#arrow_down">
+                          
+            section.section.works-head#works-head
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="traingle works-head__triangle">
+                    <polygon class = "triangle__left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
+                    <polygon class = "traingle__right" points="1000,0   1000,86   500,86   500,75.5"></polygon>
+                </svg>
+                .title.works-head__section-title(style="background-image: url('assets/img/icons/works_header.svg')") Мои работы
+                
+            include ../blocks/slider
+            include ../blocks/what-about
 
-    include ../blocks/footer.pug
+        include ../blocks/footer.pug

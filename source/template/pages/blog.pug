@@ -4,62 +4,63 @@ block variables
   - var title = 'Блог'
 
 block content
-    .wrapper
-        section.section.hero.hero_blog
-            .container
-                ul.socials.hero-socials
-                    li.socials__item
-                        a(href="#").socials__link.socials__link_vk
-                            svg 
-                                <use xlink:href='#vk'/>
-                    li.socials__item
-                        a(href="#").socials__link.socials__link_gh
-                            svg 
-                                <use xlink:href='#github'/>
-                    li.socials__item
-                        a(href="#").socials__link.socials__link_in
-                            svg 
-                                <use xlink:href='#in'/>
-                include ../blocks/hamburger-fullscreen-menu
-                .hero__title
-                    svg(height="400px").section-title
-                            <use xlink:href="#blog_header">
-                    .user.hero__user-block
-                        .user__photo
-                            img(src="assets/img/avka.jpg" alt="avka").user__img
-                        .user__title
-                            .title.title_white.title_blog Блог
-                        .user__text Статьи, которые я написал
-        section.section.blog
-            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="traingle blog__triangle">
-                <polygon class = "triangle__left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
-                <polygon class = "traingle__right" points="1000,0   1000,86   500,86   500,75.5"></polygon>
-            </svg>
-            .container
-                aside.blog__sidebar
-                    ul.blog-list
-                        li.blog-list__item
-                            a(href="#article-2").blog-list__link Самое важное в SASS
-                        li.blog-list__item
-                            a(href="#").blog-list__link.active Самое важное в SASS
-                        li.blog-list__item
-                            a(href="#article-1").blog-list__link Приёмы в вёрстке, без которых не обходится ни один сайт
-                        li.blog-list__item
-                            a(href="#").blog-list__link Самое важное в SASS
-                main.blog__content
-                    article.blog-article
-                        header.blog-article__header
-                            .blog-article__title#article-1 Приёмы в вёрстке, без которых не обходится ни один сайт
-                            .blog-article__date 13 ноября 2016
-                        .blog-article__text
-                            p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
-                            p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
-                    article.blog-article
-                        header.blog-article__header
-                            .blog-article__title#article-2 Самое важное в SASS
-                            .blog-article__date 13 ноября 2016
-                        .blog-article__text
-                            p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
-                            p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+    .page-wrapper
+        .wrapper
+            section.section.hero.hero_blog
+                .container
+                    ul.socials.hero-socials
+                        li.socials__item
+                            a(href="#").socials__link.socials__link_vk
+                                svg 
+                                    <use xlink:href='#vk'/>
+                        li.socials__item
+                            a(href="#").socials__link.socials__link_gh
+                                svg 
+                                    <use xlink:href='#github'/>
+                        li.socials__item
+                            a(href="#").socials__link.socials__link_in
+                                svg 
+                                    <use xlink:href='#in'/>
+                    include ../blocks/hamburger-fullscreen-menu
+                    .hero__title
+                        svg(height="400px").section-title
+                                <use xlink:href="#blog_header">
+                        .user.hero__user-block
+                            .user__photo
+                                img(src="assets/img/avka.jpg" alt="avka").user__img
+                            .user__title
+                                .title.title_white.title_blog Блог
+                            .user__text Статьи, которые я написал
+            section.section.blog
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="traingle blog__triangle">
+                    <polygon class = "triangle__left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
+                    <polygon class = "traingle__right" points="1000,0   1000,86   500,86   500,75.5"></polygon>
+                </svg>
+                .container
+                    aside.blog__sidebar
+                        ul.blog-list
+                            li.blog-list__item
+                                a(href="#article-2").blog-list__link Самое важное в SASS
+                            li.blog-list__item
+                                a(href="#").blog-list__link.active Самое важное в SASS
+                            li.blog-list__item
+                                a(href="#article-1").blog-list__link Приёмы в вёрстке, без которых не обходится ни один сайт
+                            li.blog-list__item
+                                a(href="#").blog-list__link Самое важное в SASS
+                    main.blog__content
+                        article.blog-article
+                            header.blog-article__header
+                                .blog-article__title#article-1 Приёмы в вёрстке, без которых не обходится ни один сайт
+                                .blog-article__date 13 ноября 2016
+                            .blog-article__text
+                                p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+                                p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                        article.blog-article
+                            header.blog-article__header
+                                .blog-article__title#article-2 Самое важное в SASS
+                                .blog-article__date 13 ноября 2016
+                            .blog-article__text
+                                p Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
+                                p Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
 
-    include ../blocks/footer
+        include ../blocks/footer

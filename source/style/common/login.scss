@@ -4,9 +4,14 @@
 	border-radius: 10px;
 	overflow: hidden;
 	text-align: center;
-	
+	@include w520 {
+		width: 299px;
+	}
 	& label {
 		display: block;
+		@include w520 {
+			font-size: 16px;
+		}
 		span {
 			display: inline-block;
 			vertical-align: middle;
@@ -35,7 +40,6 @@
 		display: table-cell;
 		outline: none;
 		border-radius: 0 5px 5px 0;
-		// opacity: .5;
 		padding: 15px;
 		background-color: #fff;
 		border: none;
@@ -54,9 +58,6 @@
 				color: $green;
 			}
 		}
-		// &:invalid {
-		// 	box-shadow: inset 0px 0px 0px 2px $red;
-		// }
 		&-wrapp { 
 			display: flex;
 			border-collapse: separate;
@@ -79,7 +80,6 @@
 		display: table-cell;
 		outline: none;
 		border-radius: 0 5px 5px 0;
-		// opacity: .5;
 		padding: 15px;
 		background-color: #fff;
 		border: none;
@@ -97,9 +97,6 @@
 				color: $green;
 			}
 		}
-		// &:invalid {
-		// 	box-shadow: inset 0px 0px 0px 2px $red;
-		// }
 		&-wrapp { 
 			display: flex;
 			border-collapse: separate;
@@ -108,9 +105,6 @@
 			flex-direction: row-reverse;
 		}
 		&-pic {
-			// display: inline-block;
-			// width: 20px;
-			// height: 20px;
 			border-radius: 5px 0 0 5px;
 			padding: 15px;
 			color: #c4cbcd;
@@ -138,12 +132,16 @@
 	&__text {
 		display: block;
 		@include Roboto(600);
-		font-size: 16px;
+		// font-size: 16px;
 		margin: 20px 0 10px 0;
 	}
 	&__btns {
 		font-size: 0;
-		margin-top: 63px;
+		// margin-top: 63px;
+		margin-top: 30px;
+		@include w520 {
+			margin-top: 44px;
+		}
 	}
 	&__btn {
 		@include Roboto(500);
@@ -158,6 +156,9 @@
 		width: 50%;
 		text-align: center;
 		cursor: pointer;
+		@include w520 {
+			font-size: 14px;
+		}
 		&:first-child {
 			border-right: 1px solid rgba(#82cfc9, .5);
 		}
@@ -194,6 +195,10 @@
 	border-radius: 10px;
 	overflow: hidden;
 	background-color: rgba(#fcfcfc, .85);
-	padding: 25px 0 0 0;
+	// padding: 25px 0 0 0;
 	@include centered();
+	@include w520 {
+		width: 299px;
+		padding: 0;
+	}
 }

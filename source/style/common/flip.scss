@@ -17,7 +17,11 @@
 
 .flip-container, .welcome, .login-wrapper {
 	width: 383px;
-	height: 476px;
+	height: 410px;
+	@include w520 {
+		width: 299px;
+		height: 410px;
+	}
 }
 
 

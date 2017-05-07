@@ -15,14 +15,19 @@
 
 .nav-link {
 	@include Roboto(500);
-	font-size: 16px;
 	text-decoration: none;
 	display: block;
 	padding: 16px 32px;
 	color: #fff;
 	transition: .3s;
+	// @include w768 {
+	// 	padding: 16px 34px;
+	// }
 	&_welcome {
 		background-color: rgba($green, .8);
+		@include w520 {
+			padding: 16px 22px;
+		}
 		&:hover {
 			background-color: $dark-green;
 		}

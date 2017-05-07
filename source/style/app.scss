@@ -134,6 +134,9 @@ $red : 				 #e44845;
   text-align: center;
 
   $margin : 40px;
+  @include w768 {
+  	font-size: 35px;
+  }
 
   &:after, &:before {
     content: "";
@@ -171,12 +174,12 @@ $red : 				 #e44845;
 	font-size: 35px;
 	display: inline-block;
     position: relative;
-    padding: 20px 45px;
+    padding: 20px 42px;
     color: #455a64;
-    // max-width: 400px;
     text-align: center;
-
-	// $margin : 40px;
+	@include w520 {
+		font-size: 30px;
+	}
 
 	&:after, &:before {
     content: "";
