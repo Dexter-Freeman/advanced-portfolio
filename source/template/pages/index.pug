@@ -6,33 +6,66 @@ block variables
 block content
     .index-page-wrapper
         .container
-            a(href="login.html").welcome-login Авторизоваться
-            .welcome
-                .user.welcome-user-block
-                    .user__photo
-                        img(src="/assets/img/avka.jpg" alt="avka").user__img
-                    .user__name.user__name_welcome Dexter Freeman
-                    .user__desc.user__desc_welcome Личный сайт веб разработчика
-                ul.socials.welcome__socials
-                      li.socials__item
-                        a(href="#" class="socials__link socials__link_green")
-                            svg 
-                                <use xlink:href='#vk'/>
-                      li.socials__item
-                        a(href="#" class="socials__link socials__link_green")
-                            svg 
-                                <use xlink:href='#github'/>
-                      li.socials__item
-                        a(href="#" class="socials__link socials__link_green")
-                            svg 
-                                <use xlink:href='#in'/>
-                nav.nav.welcome__nav
-                    ul.nav-list.nav-list_welcome
-                        li.nav-list__item.nav-list__item_welcome
-                            a(href="works.html").nav-link.nav-link_welcome Мои работы
-                        li.nav-list__item.nav-list__item_welcome
-                            a(href="about.html").nav-link.nav-link_welcome Обо мне
-                        li.nav-list__item.nav-list__item_welcome
-                            a(href="blog.html").nav-link.nav-link_welcome Блог
+            a(href="#").welcome-login Авторизоваться
+
+            .flip-container(ontouchstart="this.classList.toggle('hover');")
+                .flipper
+                    .welcome
+                        .user.welcome-user-block
+                            .user__photo
+                                img(src="/assets/img/avka.jpg" alt="avka").user__img
+                            .user__name.user__name_welcome Dexter Freeman
+                            .user__desc.user__desc_welcome Личный сайт веб разработчика
+                        ul.socials.welcome__socials
+                              li.socials__item
+                                a(href="#" class="socials__link socials__link_green")
+                                    svg 
+                                        <use xlink:href='#vk'/>
+                              li.socials__item
+                                a(href="#" class="socials__link socials__link_green")
+                                    svg 
+                                        <use xlink:href='#github'/>
+                              li.socials__item
+                                a(href="#" class="socials__link socials__link_green")
+                                    svg 
+                                        <use xlink:href='#in'/>
+                        nav.nav.welcome__nav
+                            ul.nav-list.nav-list_welcome
+                                li.nav-list__item.nav-list__item_welcome
+                                    a(href="works.html").nav-link.nav-link_welcome Мои работы
+                                li.nav-list__item.nav-list__item_welcome
+                                    a(href="about.html").nav-link.nav-link_welcome Обо мне
+                                li.nav-list__item.nav-list__item_welcome
+                                    a(href="blog.html").nav-link.nav-link_welcome Блог
+                    .login-wrapper
+                        form.login#login
+                            .login__title
+                                .subtitle Авторизуйтесь
+                            .login__inputs
+                              .login__name-wrapp
+                                input(type="text" name="name" required placeholder="Логин").login__name#name
+                                span.login__name-pic <i class="fa fa-user" aria-hidden="true"></i>
+                               
+                              .login__password-wrapp
+                                input(type="password" name="password" required placeholder="Пароль").login__password#password
+                                span.login__password-pic <i class="fa fa-key fa-fw" aria-hidden="true"></i>
+                                
+                              label(for="human")
+                                  input(type="checkbox" name="human").login__human#human
+                                  span.login__human_check
+                                  span Я человек
+                              span.login__text Вы точно не робот?
+                              .login__robot-block
+                                label(for="robot_yes")
+                                    input(type="radio" name="robot").login__robot#robot_yes
+                                    span.login__robot_check
+                                    span Да
+                                label(for="robot_no")
+                                    input(type="radio" name="robot").login__robot#robot_no
+                                    span.login__robot_check
+                                    span Не уверен
+                            .login__btns
+                              a(href="index.html").login__btn На главную
+                              a(href="#" onclick="document.getElementById('login').submit(); return false;").login__btn Войти
 
             .copyright.welcome-copyright © Dexter Freeman | создано с любовью в LoftSchool | 2017
