@@ -1,0 +1,47 @@
+.about {
+	@extend %clearfix;
+	// position: relative;
+	display: flex;
+	align-items: stretch;
+	@include w992 {
+		flex-wrap: wrap;
+	}
+	&__left {
+		width: 50%;
+		// float: left;
+		background: $white;
+		// position: relative;
+		padding-bottom: 40px;
+		@extend %clearfix;
+		@include w992 {
+			width: 100%;
+		}
+	}
+	&__right {
+		width: 50%;
+		// float: right;
+		background: $beige;
+		// position: absolute;
+	    padding-bottom: 40px;
+	    // right: 0;
+	    // bottom: 0;
+	    // top: 0;
+		@extend %clearfix;
+		@include w992 {
+			width: 100%;
+		}
+	}
+	&__triangles {
+		position: absolute;
+		bottom: 100%;
+	}
+}
+
+.about-data {
+	&__description {
+
+	}
+	&__content {
+
+	}
+}

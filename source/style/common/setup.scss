@@ -79,19 +79,24 @@ h1, h2, h3, h4, h5 {
 	height: 100%;
 	position: relative;
 	@include clearfix;
-	&_half_left {
-		width: 600px;
-		padding-left: 10px;
-		float: right;
+	&_half {
+		// width: 600px;
+		// padding-left: 10px;
+		// float: right;
 		text-align: center;
-		padding: 0 80px 40px 80px;
+		// padding: 0 80px 40px 80px;
+		padding: 0 10%;
+		@include w520 {
+			padding: 0 2%;
+		}
 	}
-	&_half_right {
-		width: 600px;
-		padding-left: 40px;
-		float: left;
-		text-align: center;
-	}
+	// &_halfht {
+	// 	// width: 600px;
+	// 	// padding-left: 40px;
+	// 	// float: left;
+	// 	text-align: center;
+	// 	padding: 0 10%;
+	// }
 	@include w1200 {
 		max-width: 1200px;
 	}

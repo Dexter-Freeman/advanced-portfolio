@@ -24,6 +24,7 @@ $red : 				 #e44845;
 @import "common/arrow";
 @import "common/full-screen-menu";
 @import "common/login";
+@import "common/about";
 //mixins
 @import "helpers/mixins";
 
@@ -70,6 +71,7 @@ $red : 				 #e44845;
 .hamburger-wrapp {
 	position: absolute;
 	right: 5%;
+	z-index: 2;
 }
 
 .hamburger-wrapp:hover .full-screen-menu {
@@ -83,43 +85,6 @@ $red : 				 #e44845;
 
 
 
-.about {
-	@extend %clearfix;
-	position: relative;
-
-	&__left {
-		width: 50%;
-		float: left;
-		background: $white;
-		position: relative;
-		@extend %clearfix;
-	}
-	&__right {
-		width: 50%;
-		float: right;
-		background: $beige;
-		position: absolute;
-	    padding-bottom: 40px;
-	    right: 0;
-	    bottom: 0;
-	    top: 0;
-		@extend %clearfix;
-		padding-bottom: 40px;
-	}
-	&__triangles {
-		position: absolute;
-		bottom: 100%;
-	}
-}
-
-.about-data {
-	&__description {
-
-	}
-	&__content {
-
-	}
-}
 
 .title {
   color: #373e42;
@@ -215,11 +180,17 @@ $red : 				 #e44845;
 }
 
 .user-about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	&__picture {
-
+		max-width: 440px;
+		@include w992 {
+			max-width: 475px;
+		}
 	}
 	&__img {
-		width: 440px;
+		max-width: 100%;
 	}
 	&__title {
 		 color: #455a64;
@@ -237,6 +208,9 @@ $red : 				 #e44845;
 .skills {
 	text-align: left;
 	margin-top: 50px;
+	@include w992 {
+		text-align: center;
+	}
 	&__item {
 		margin-top: 40px;
 	}
@@ -250,21 +224,26 @@ $red : 				 #e44845;
 	}
 	&__list {
 		@include clearfix;
+		margin-left: -35px;
 	}
 	&__item {
 		@include clearfix;
 		float: left;
 		margin-left: 35px;
 		margin-top: 20px;
-		&:first-child {
-			margin-left: 0;
+		@include w992 {
+			display: inline-block;
+			float: none;
 		}
-		&:nth-child(5) {
-			margin-left: 0;
-		}
-		&:nth-child(9) {
-			margin-left: 0;
-		}
+		// &:first-child {
+		// 	margin-left: 0;
+		// }
+		// &:nth-child(5) {
+		// 	margin-left: 0;
+		// }
+		// &:nth-child(9) {
+		// 	margin-left: 0;
+		// }
 	}
 }
 

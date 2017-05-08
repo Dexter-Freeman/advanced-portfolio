@@ -38,16 +38,17 @@ block content
                             <use xlink:href="#arrow_down">
                           
 
-            section.section.about#about
+            section.section.triangle-section
                 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="traingle blog__triangle">
                     <polygon class = "triangle__left triangle_fill_white" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
                     <polygon class = "traingle__right triangle_fill_beige" points="1000,0   1000,86   500,86   500,75.5"></polygon>
                 </svg>
+            section.section.about#about
                 .about__left
                     //- <svg class="triangle triangle_fill_white about__triangles" viewbox="0 0 1000 100" preserveAspectRatio="none">
                     //-       <polygon points="0,0 0,100 1000,100"></polygon>
                     //- </svg>
-                    .container_half_left
+                    .container_half
 
                             <div class="title about__section-title" style="background-image: url('assets/img/icons/about_header.svg');">Обо мне</div>      
                             .user-about
@@ -56,14 +57,14 @@ block content
                                 .user-about__title
                                       .subtitle
                                             | Кто я
-                            .user-about__text
-                                p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-                                p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.    
+                                .user-about__text
+                                    p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                                    p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.    
                 .about__right
                     //- <svg class="triangle triangle_fill_beige about__triangles" viewbox="0 0 1000 100" preserveAspectRatio="none">
                     //-       <polygon points="0,100 1000,100 1000,0"></polygon>
                     //- </svg>
-                    .container_half_right
+                    .container_half
                             .about-data
                                 .about-data__description.about-user-info
                                     .about-user-info__title
@@ -134,7 +135,7 @@ block content
                                                     .skill-section__title WorkFlow
                                                     ul.skill-section__list
                                                         li.skill-section__item
-                                                                skill
+                                                                .skill
                                                                     <svg class="circles" viewBox='0 0 110 110'>
                                                                         <circle r="45" cx="50%" cy="50%" fill="none" class="circle__first"/> 
                                                                         <circle r="45" cx="50%" cy="50%"  transform="rotate(-90 55 55)" class="circle__second circle-80"/> 
