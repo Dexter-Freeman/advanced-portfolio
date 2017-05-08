@@ -16,6 +16,9 @@
 
     &_beige {
       fill: $beige;
+      @include w992 {
+        fill: $white;
+      }
     }
 
   }

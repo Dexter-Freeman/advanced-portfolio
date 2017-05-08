@@ -53,9 +53,10 @@
 	margin-bottom: 70px;
 	@include w768 {
 		flex-flow: column;
+		max-width: 90%;
 	}
 	&__item {
-		width: 370px;
+		max-width: 370px;
 		margin-right: 35px;
 		@include w992 {
 			width: 360px;
@@ -66,6 +67,9 @@
 			margin-right: 0;
 			margin-bottom: 20px;
 			text-align: center;
+		}
+		@include w520 {
+			max-width: 100%;
 		}
 	}
 }
