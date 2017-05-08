@@ -11,12 +11,67 @@
 		float: left;
 		text-align: center;
 		padding-right: 35px;
+
+		@include w992 {
+			display: none;
+		}
+		@include w520 {
+			display: block;
+			float: none;
+			position: fixed;
+			left: -80%;
+			top: 0;
+			bottom: 0;
+			background-color: $green;
+			color: #fff;
+			padding-right: 15px;
+			width: 80%;
+			box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.2);
+			transition: ease-out .3s;
+			&:hover {
+				left: 0;
+			}
+			&:after {
+				content: "";
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background-color: $green;
+				position: absolute;
+				box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.2);
+				right: -10px;
+				@include centered(y);
+			}
+		}
+	}
+	&__circle {
+		width: 10px;
+		height: 40px;
+		overflow: hidden;
+		right: -10px;
+		@include centered(y);
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			border-radius: 100%;
+			background-color: $green;
+			width: 40px;
+			box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.2);
+		}
 	}
 	&__content {
 		width: 75%;
 		float: left;
 		text-align: center;
 		padding-left: 35px;
+		@include w992 {
+			float: none;
+			width: 100%;
+			padding-left: 0;
+		}
 	}
 }
 
@@ -32,8 +87,15 @@
 		transition: .3s;
 		padding: 15px;
 		text-align: right;
+		@include w520 {
+			color: #fff;
+			font-weight: 400;
+		}
 		&:hover {
 			color: $green;
+			@include w520 {
+				color: #fff;
+			}
 		}
 	}
 }
@@ -42,13 +104,28 @@
 	box-shadow: 3px 0px 0px 0px $green;
 	font-weight: bold;
 	color: $green;
+	@include w520 {
+		color: #fff;
+		font-weight: 600;
+		box-shadow: 3px 0px 0px 0px #fff;
+	}
 }
 
 .blog-article {
-	width: 685px;
+	min-width: 685px;
 	border-top: solid 5px rgba(#373e42, .07);
 	margin-top: 65px;
 	padding-top: 65px;
+	// max-width: 100%;
+	@include w992 {
+		font-size: 14px;
+		min-width: 95%;
+		margin-top: 45px;
+		padding-top: 45px;
+	}
+	@iinclude w768 {
+		min-width: 95%;
+	}
 	&:first-child {
 		border-top: none;
 		margin-top: 0;
@@ -61,13 +138,22 @@
 		text-align: left;
 		@include bernier();
 		font-size: 35px;
+		@include w992 {
+			font-size: 30px;
+		}
 	}
 	&__date {
 		text-align: left;
 		color: $green;
 		margin-top: 25px;
+		@include w992 {
+			margin-top: 15px;
+		}
 	}
 	&__text {
 		margin-top: 25px;
+		@include w992 {
+			margin-top: 15px;
+		}
 	}
 }

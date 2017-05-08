@@ -27,7 +27,7 @@
 		margin-bottom: 20px;
 	}
 	&__title {
-
+		text-align: center;
 	}
 	&__inputs {
 		padding: 0 20px;
@@ -47,6 +47,15 @@
 		border: none;
 		width: 50%;
 		text-align: center;
+		@include w992 {
+
+		}
+		@include w768 {
+			
+		}
+		@include w520 {
+			font-size: 14px;
+		}
 		&:first-child {
 			border-right: 1px solid rgba(#82cfc9, .5);
 		}

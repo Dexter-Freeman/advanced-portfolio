@@ -177,8 +177,11 @@ $red : 				 #e44845;
     padding: 20px 42px;
     color: #455a64;
     text-align: center;
+    @include w768 {
+    	padding: 10px 42px;
+    }
 	@include w520 {
-		font-size: 30px;
+		font-size: 21px;
 	}
 
 	&:after, &:before {
