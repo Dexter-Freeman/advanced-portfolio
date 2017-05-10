@@ -70,7 +70,6 @@
 }
 
 .footer-nav {
-	// position: relative;
 	@include clearfix;
 	&__link {
 		display: block;
@@ -92,6 +91,10 @@
 		@include w992 {
 			float: none;
 			display: inline-block;
+		}
+		@include w320 {
+			margin-left: 10px;
+			margin-right: 10px;
 		}
 		&:first-child {
 			margin-left: 0;

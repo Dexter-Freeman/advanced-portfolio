@@ -13,9 +13,23 @@
 		padding-right: 35px;
 
 		@include w992 {
-			display: none;
+			float: none;
+			position: fixed;
+			left: -50%;
+			top: 0;
+			bottom: 0;
+			background-color: $green;
+			color: #fff;
+			padding-right: 15px;
+			width: 50%;
+			box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.2);
+			transition: ease-out .3s;
+			&:hover {
+				left: 0;
+				z-index: 10;
+			}
 		}
-		@include w520 {
+		@include w768 {
 			display: block;
 			float: none;
 			position: fixed;
@@ -30,26 +44,20 @@
 			transition: ease-out .3s;
 			&:hover {
 				left: 0;
+				z-index: 10;
 			}
-			// &:after {
-			// 	content: "";
-			// 	width: 40px;
-			// 	height: 40px;
-			// 	border-radius: 50%;
-			// 	background-color: $green;
-			// 	position: absolute;
-			// 	box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.2);
-			// 	right: -10px;
-			// 	@include centered(y);
-			// }
 		}
 	}
 	&__circle {
+		display: none;
 		width: 10px;
 		height: 40px;
 		overflow: hidden;
 		right: -10px;
 		@include centered(y);
+		@include w992 {
+			display: block;
+		}
 		&:after {
 			content: "";
 			position: absolute;
@@ -87,13 +95,13 @@
 		transition: .3s;
 		padding: 15px;
 		text-align: right;
-		@include w520 {
+		@include w992 {
 			color: #fff;
 			font-weight: 400;
 		}
 		&:hover {
 			color: $green;
-			@include w520 {
+			@include w992 {
 				color: #fff;
 			}
 		}
@@ -104,7 +112,7 @@
 	box-shadow: 3px 0px 0px 0px $green;
 	font-weight: bold;
 	color: $green;
-	@include w520 {
+	@include w992 {
 		color: #fff;
 		font-weight: 600;
 		box-shadow: 3px 0px 0px 0px #fff;
@@ -116,7 +124,6 @@
 	border-top: solid 5px rgba(#373e42, .07);
 	margin-top: 65px;
 	padding-top: 65px;
-	// max-width: 100%;
 	@include w992 {
 		font-size: 14px;
 		min-width: 95%;
@@ -140,6 +147,9 @@
 		font-size: 35px;
 		@include w992 {
 			font-size: 30px;
+		}
+		@include w480 {
+			font-size: 21px;
 		}
 	}
 	&__date {

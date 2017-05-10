@@ -8,7 +8,7 @@ block content
         .container
             a(href="#").welcome-login Авторизоваться
 
-            .flip-container(ontouchstart="this.classList.toggle('hover');")
+            .flip-container
                 .flipper
                     .welcome
                         .user.welcome-user-block
@@ -65,7 +65,7 @@ block content
                                     span.login__robot_check
                                     span Не уверен
                             .login__btns
-                              a(href="index.html").login__btn На главную
+                              a(href="#").login__btn#index-page На главную
                               a(href="#" onclick="document.getElementById('login').submit(); return false;").login__btn Войти
 
             .copyright.welcome-copyright © Dexter Freeman | создано с любовью в LoftSchool | 2017

@@ -1,12 +1,22 @@
 .circles {
     fill: none;
     stroke-width: 15;
+    // &:hover .circle__second {
+    //     stroke-dasharray: .0010 282.6;
+    // }
+    @include w320 {
+        stroke-width: 12;
+    }
+    &:hover .circle__second {
+        stroke: #1bb696;
+    }
 }
 .circle__first {
   stroke: #dfdcd5;
 }
 .circle__second {
-    stroke: #1bb696;
+    // stroke: #1bb696;
+    stroke: #dfdcd5;
     stroke-dasharray: .0010 282.6;
     transition: all 1s;
 }
@@ -34,6 +44,9 @@
 }
 .circle-40 {
     stroke-dasharray: 113.04 282.6;
+    &:hover {
+        animation: skil-round 3s linear;
+    }
 }
 .circle-45 {
     stroke-dasharray: 127.17 282.6;
@@ -70,4 +83,13 @@
 }
 .circle-100 {
     stroke-dasharray: 282.6 282.6;
+}
+
+@keyframes skil-round {
+    from {
+        stroke-dasharray: .001 282.6;
+    }
+    to {
+        stroke-dasharray: 113.04 282.6;
+    }
 }

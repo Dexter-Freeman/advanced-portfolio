@@ -1,6 +1,5 @@
 .about {
 	@extend %clearfix;
-	// position: relative;
 	display: flex;
 	align-items: stretch;
 	@include w992 {
@@ -8,24 +7,20 @@
 	}
 	&__left {
 		width: 50%;
-		// float: left;
 		background: $white;
-		// position: relative;
 		padding-bottom: 40px;
 		@extend %clearfix;
 		@include w992 {
 			width: 100%;
 		}
+		@include w480 {
+			padding-bottom: 15px;
+		}
 	}
 	&__right {
 		width: 50%;
-		// float: right;
 		background: $beige;
-		// position: absolute;
 	    padding-bottom: 40px;
-	    // right: 0;
-	    // bottom: 0;
-	    // top: 0;
 		@extend %clearfix;
 		@include w992 {
 			width: 100%;

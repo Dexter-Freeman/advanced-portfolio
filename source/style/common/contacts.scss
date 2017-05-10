@@ -5,6 +5,10 @@
 	border-radius: 10px;
 	overflow: hidden;
 	padding: 35px;
+	@include w480 {
+		width: 310px;
+		padding: 20px;
+	}
 	&__title {
 		text-align: center;
 	}
