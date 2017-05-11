@@ -14,3 +14,40 @@
 		@include centered(x);
 	}
 }
+
+.blur__img {
+  // width: 100%;
+  // height: auto;
+  display:block;
+  height: 100%;
+  width: auto;
+  
+}
+.blur__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 100%;
+  
+}
+
+.blur-form {
+	max-width: 380px;
+    height: 456px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    background-image: url("../img/what-about_bg.jpg");
+    &__wrapper {
+    	width: 95%;
+	    max-width: 380px;
+	    position: relative;
+	    height: 456px;
+	    border-radius: 10px;
+    	overflow: hidden;
+    }
+}

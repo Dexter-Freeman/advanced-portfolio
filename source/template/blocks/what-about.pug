@@ -1,4 +1,6 @@
 section.section.what-about
+	.blur__back
+		img(src="assets/img/what-about_bg.jpg").blur__img
 	.what-about__title
 		.title.what-about__section-title(style="background-image: url('assets/img/icons/about_header.svg')") что обо мне <br> говорят
 	ul.reviews-list
@@ -24,21 +26,24 @@ section.section.what-about
 				.reviews__user-desc
 					span.reviews__user-name Сабанцев Владимир
 					span.reviews__user-about преподаватель
+	
+	.blur-form__wrapper
+		.blur-form
 
-	.feedback-wrap
-		form.feedback#feedback
-			.feedback__title 
-				.subtitle Связаться со мной
-			.feedback__inputs
-				//- label(for="name")
-				input(type="text" name="name" id="name" required placeholder="Имя")
-				//- label(for="email")
-				input(type="text" name="email" id="email" required placeholder="Email")
-				//- label(for="message")
-				textarea(name="message" id="message" required placeholder="Ваше сообщение")
-			.feedback__btns
-				button(type="submit").feedback__btn Отправить
-				button(type="reset").feedback__btn Очистить
+		.feedback-wrap
+			form.feedback#feedback
+				.feedback__title 
+					.subtitle Связаться со мной
+				.feedback__inputs
+					//- label(for="name")
+					input(type="text" name="name" id="name" required placeholder="Имя")
+					//- label(for="email")
+					input(type="text" name="email" id="email" required placeholder="Email")
+					//- label(for="message")
+					textarea(name="message" id="message" required placeholder="Ваше сообщение")
+				.feedback__btns
+					button(type="submit").feedback__btn Отправить
+					button(type="reset").feedback__btn Очистить
 
 	a(href="#hero").arrow.arrow-up
 		img(src="/assets/img/icons/arrow_down.svg").arrow__icon

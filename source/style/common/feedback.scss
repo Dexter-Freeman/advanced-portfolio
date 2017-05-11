@@ -1,7 +1,7 @@
 .feedback {
 	width: 100%;
 	max-width: 380px;
-	background-color: rgba(#fff, .15);
+	// background-color: rgba(#fff, .15);
 	border-radius: 10px;
 	overflow: hidden;
 	
@@ -11,6 +11,7 @@
 		width: 100%;
 		margin-bottom: 20px;
 		outline: none;
+		border: none;
 		@include Roboto(400);
 		&:active {
 			@include Roboto(500);
@@ -71,6 +72,8 @@
 .feedback-wrap {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 70px;
-	width: 95%;
+	// margin-bottom: 70px;
+	// width: 95%;
+	position: absolute;
+    top: 0;
 }

@@ -51,6 +51,7 @@
 	display: flex;
 	justify-content: center;
 	margin-bottom: 70px;
+	z-index: 1;
 	@include w768 {
 		flex-flow: column;
 		max-width: 90%;
