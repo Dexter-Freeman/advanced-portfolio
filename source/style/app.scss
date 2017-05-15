@@ -6,6 +6,9 @@ $dark-green : 		 #009688;
 $red : 				 #e44845;
 $transition: .5s;
 
+//mixins
+@import "helpers/mixins";
+
 @import "common/setup";
 @import "common/fonts";
 @import "common/socials";
@@ -26,8 +29,9 @@ $transition: .5s;
 @import "common/full-screen-menu";
 @import "common/login";
 @import "common/about";
-//mixins
-@import "helpers/mixins";
+@import "common/about";
+@import "common/parallax";
+
 
 // @import "blocks/*";
 

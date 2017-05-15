@@ -18,6 +18,8 @@ $(document).ready(function(){
 		$('.welcome-login').css("display","block");
 	});
 
+/////////////////////////////////////////////////////////////////////////////////////
+
 $('.hamburger').on('click', function(e) {
   e.preventDefault();
   if ($(this).hasClass('active')) {
@@ -28,6 +30,12 @@ $('.hamburger').on('click', function(e) {
     $('.full-screen-menu').css('display','flex');
   }
 });
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
 
 
 });
@@ -53,6 +61,9 @@ function blur() {
       'background-position': posX + 'px' + ' ' + posY + 'px'
   })
 }
+
+
+
 
 
 
