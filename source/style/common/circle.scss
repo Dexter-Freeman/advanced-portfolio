@@ -7,18 +7,20 @@
     @include w320 {
         stroke-width: 12;
     }
-    &:hover .circle__second {
-        stroke: #1bb696;
-    }
+    // &:hover .circle__second {
+    //     stroke: #1bb696;
+    // }
 }
 .circle__first {
   stroke: #dfdcd5;
 }
 .circle__second {
-    // stroke: #1bb696;
-    stroke: #dfdcd5;
-    stroke-dasharray: .0010 282.6;
+    stroke: #1bb696;
+    // stroke: #dfdcd5;
+    stroke-dasharray: 141.6 282.6;
     transition: all 1s;
+    
+    stroke-linecap: round;
 }
 
 .circle-0 {

@@ -18,7 +18,16 @@ $(document).ready(function(){
 		$('.welcome-login').css("display","block");
 	});
 
-
+$('.hamburger').on('click', function(e) {
+  e.preventDefault();
+  if ($(this).hasClass('active')) {
+    $(this).removeClass('active');
+    $('.full-screen-menu').css('display','none');
+  } else {
+    $(this).addClass('active');
+    $('.full-screen-menu').css('display','flex');
+  }
+});
 
 
 });
@@ -39,8 +48,8 @@ function blur() {
       posX = blurSection.offset().left - blur.offset().left;
   
   blur.css({
-      // 'background-size': imgWidth + 'px' + ' ' + 'auto',
-      'background-size': 'auto' + ' ' + imgHeight + 'px',
+      'background-size': imgWidth + 'px' + ' ' + 'auto',
+      // 'background-size': 'auto' + ' ' + imgHeight + 'px',
       'background-position': posX + 'px' + ' ' + posY + 'px'
   })
 }

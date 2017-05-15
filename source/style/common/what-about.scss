@@ -7,9 +7,10 @@
 	padding-bottom: 65px;
 	min-height: 1140px;
 	display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-    align-items: center;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
 	&__section-title {
 		@include centered(x);
 	}
@@ -18,9 +19,11 @@
 .blur__img {
   // width: 100%;
   // height: auto;
-  display:block;
-  height: 100%;
-  width: auto;
+  // display:block;
+  // height: 100%;
+  // width: auto;
+  width: 100%;
+  display: block;
   
 }
 .blur__back {
@@ -30,7 +33,7 @@
   right: 0;
   bottom: 0;
   margin: auto;
-  min-width: 100%;
+  min-width: 100rem;
   
 }
 
