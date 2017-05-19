@@ -1,3 +1,39 @@
+//   parallax
+
+var parallaxContainer = $('parallax'),
+    parallaxLayer = $('.parallax').find('.parallax__layer');
+
+
+var moveLayers = function (e) {
+    // console.log(e);
+
+    //Определяем координаты курсора мышки
+    var pageX = e.pageX,
+        pageY = e.pageY;
+
+    // (window.innerWidth/2)  -- Находим центр окна по оси Х
+    var initialX = (window.innerWidth/2) - pageX,   // Если initialX будет положительным, значит курсор движется влево от центра, если отрицательным то вправо от центра
+        initialY = (window.innerHeight/2) - pageY;  // // Если initialY будет положительным, значит курсор движется вверх от центра, если отрицательным то вниз от центра
+
+
+      parallaxLayer.map(function (index,value) {   // Делаем массив из всех слоев параллакса и перебираем их, value это каждый слой отдельно
+        var bottomPosition = ((window.innerHeight/2)*(index/100)),  // чем больше индекс слоя тем больше коэффициент
+            widthPosition = initialX*(index/100),
+            heightPosition = initialY*(index/100);
+              // console.log(index);
+        $(value).css( {
+          'bottom': '-' + bottomPosition + 'px',
+          'transform': 'translate3d('+widthPosition+'px, '+heightPosition+'px, 0)'
+        });
+      });
+
+  
+}
+
+window.addEventListener('mousemove', moveLayers);
+
+// конец parallax
+
 $(document).ready(function(){
 
 // При клике на ссылку "Авторизоваться", прячем эту ссылку и 
@@ -35,32 +71,32 @@ $('.hamburger').on('click', function(e) {
 
 
 
-
-
-
 });
 
-$(document).ready(function(){
-  blur();
-})
-$(window).resize(function(){
-  blur();
-});
+// $(document).ready(function(){
+//   blur();
 
-function blur() {
-  var imgWidth = $('.blur__back').width(),
-  	  imgHeight = $('.blur__back').height(),
-      blurSection = $('.what-about'),
-      blur = $('.blur-form'),
-      posY = blurSection.offset().top - blur.offset().top, //   текущее положение элемента относительно документа.
-      posX = blurSection.offset().left - blur.offset().left;
+// })
+
+
+// $(window).resize(function(){
+//   blur();
+// });
+
+// function blur() {
+//   var imgWidth = $('.blur__back').width(),
+//   	  imgHeight = $('.blur__back').height(),
+//       blurSection = $('.what-about'),
+//       blur = $('.blur-form'),
+//       posY = blurSection.offset().top - blur.offset().top, //   текущее положение элемента относительно документа.
+//       posX = blurSection.offset().left - blur.offset().left;
   
-  blur.css({
-      'background-size': imgWidth + 'px' + ' ' + 'auto',
-      // 'background-size': 'auto' + ' ' + imgHeight + 'px',
-      'background-position': posX + 'px' + ' ' + posY + 'px'
-  })
-}
+//   blur.css({
+//       'background-size': imgWidth + 'px' + ' ' + 'auto',
+//       // 'background-size': 'auto' + ' ' + imgHeight + 'px',
+//       'background-position': posX + 'px' + ' ' + posY + 'px'
+//   })
+// }
 
 
 
@@ -142,3 +178,4 @@ function blur() {
 // });
 
 // })();
+
