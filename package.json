@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "author": "a.kalin",
   "license": "ISC",
-  "scripts": {},
+  "homepage": "https://dexter-freeman.github.io/advanced-portfolio/",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
   "devDependencies": {
     "browser-sync": "~2.18.7",
     "del": "~2.2.2",
+    "gh-pages": "^2.2.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "~3.1.1",
     "gulp-cheerio": "~0.6.2",
